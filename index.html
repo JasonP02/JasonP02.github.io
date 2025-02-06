@@ -1,7 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* About Section */
+        #about {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        #about h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #about p {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* Interests Section */
+        #interests {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .interest-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .interest-button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .interest-button:hover {
+            transform: translateY(-3px);
+            background: #0056b3;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 4rem 2rem;
+            background-color: #f8f9fa;
+        }
+
+        .project-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 2rem;
+            padding: 2rem 0;
+            scroll-behavior: smooth;
+        }
+
+        .project-card {
+            min-width: 300px;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+            background: rgba(0,0,0,0.7);
+            color: white;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1>Hello, I'm Jason</h1>
+        <p>Welcome to my portfolio! I'm passionate about technology and creating amazing things.
+           Here you'll find information about my interests and projects.</p>
+    </section>
+
+    <section id="interests">
+        <h2>My Interests</h2>
+        <div class="interest-buttons">
+            <button class="interest-button" onclick="window.location.href='#'">Web Development</button>
+            <button class="interest-button" onclick="window.location.href='#'">Machine Learning</button>
+            <button class="interest-button" onclick="window.location.href='#'">Data Science</button>
+            <button class="interest-button" onclick="window.location.href='#'">Mobile Apps</button>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x400" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x400" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x400" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>Description of project 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
