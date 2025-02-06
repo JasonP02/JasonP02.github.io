@@ -134,10 +134,28 @@
             left: 0;
             right: 0;
             padding: 1.5rem;
-            background: rgba(0,0,0,0.7);
+            background: rgba(0,0,0,0.8);
             color: white;
             transform: translateY(100%);
             transition: transform 0.3s ease;
+        }
+
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .project-overview {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .learning-points {
+            font-size: 0.9rem;
+            color: #a8c6ff;
+            font-style: italic;
         }
 
         .project-card:hover .project-info {
@@ -197,26 +215,58 @@
                 <img src="./images/CMR_Photo.jpg" alt="Corn Monitoring Robot">
                 <div class="project-info">
                     <h3>Corn Monitoring Robot</h3>
-                    <p>An autonomous corn tracking robot for my senior capstone. 
-
-                        I did some design work, and all of the software stack (ESP32, Raspberry PI)
-
-                        In this project I learned about the importance of prototyping fast.
-                    </p>
+                    <div class="project-overview">
+                        <p>An autonomous corn tracking robot for my senior capstone. 
+                        Handled design work and full software stack implementation using ESP32 and Raspberry Pi.</p>
+                    </div>
+                    <div class="learning-points">
+                        <p>Key Learning: The importance of rapid prototyping in robotics development</p>
+                    </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x400" alt="Project 2">
+                <img src="images/LoCoBot.jpg" alt="LoCoBot">
                 <div class="project-info">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2</p>
+                    <h3>Autonomous Cup Manipulation</h3>
+                    <div class="project-overview">
+                        <p>Two-semester research project focused on autonomous manipulation 
+                        of water-filled cups using LoCoBot platform.</p>
+                    </div>
+                    <div class="learning-points">
+                        <p>Key Learning: Developed strong foundation in Linux, ROS, dependency management, 
+                        and core software engineering principles through self-directed learning</p>
+                    </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x400" alt="Project 3">
+                <img src="images/NeuralNetworks.jpg" alt="Neural Networks from Scratch">
                 <div class="project-info">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3</p>
+                    <h3>Neural Networks from Scratch</h3>
+                    <div class="project-overview">
+                        <p>Implemented common neural network architectures (MLP, CNN, RNN, LSTM, Transformer) 
+                        using only NumPy, without autograd.</p>
+                    </div>
+                    <div class="learning-points">
+                        <p>Key Learning: Gained deep intuitive understanding of tensor operations 
+                        and neural network fundamentals</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/SLAM.jpg" alt="SLAM">
+                <div class="project-info">
+                    <h3>SLAM Implementation</h3>
+                    <div class="project-overview">
+                        <p>Built path planning and SLAM system from ground up in Python, 
+                        moving beyond ROS abstractions used in robotics competitions.</p>
+                    </div>
+                    <div class="learning-points">
+                        <p>Key Learning: Experience with complex Python projects and data pipelines, 
+                        despite challenges with bundle adjustment implementation</p>
+                    </div>
                 </div>
             </div>
         </div>
