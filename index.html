@@ -54,13 +54,19 @@
         }
 
         #about h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
         }
 
         #about p {
-            max-width: 600px;
-            line-height: 1.6;
+            max-width: 800px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #34495e;
+            margin: 0 auto;
+            padding: 0 20px;
+            white-space: pre-line;
         }
 
         /* Interests Section */
@@ -130,6 +136,25 @@
             padding: 1.5rem;
             background: rgba(0,0,0,0.7);
             color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-info {
+            transform: translateY(0);
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .project-link:hover {
+            color: #007bff;
         }
     </style>
 </head>
@@ -144,21 +169,21 @@
 
     <section id="about">
         <h1>Hello, I'm Jason</h1>
-        <p>Hello, I'm Jason! I'm a recent graduate from UMass Amherst, where I got my masters degree in mechanical engineering. 
+        <p>Hello, I'm Jason! I'm a recent graduate from UMass Amherst, where I got my masters degree in mechanical engineering.
+
             I am looking for open positions in virtually any domain. The most important thing to me is that I can work on interesting problems with a great team.
+
             Some of my interests are running, meditation, reading, and researching a subfield of machine learning called mechanistic interpretability.
 
             You might wonder why a mechanical engineer has so many software projects. The primary reason is that it is cheap and fast to make things that you can see working. 
             However, I am interested in solving any problem that will have an impact on a lot of people in a positive way.
 
-            Below are some projects, and you'll see some other details about me sprinkled in...
-           </p>
+            Below are some projects, and you'll see some other details about me sprinkled in...</p>
     </section>
 
     <section id="interests">
         <h2>My Interests</h2>
         <div class="interest-buttons">
-            <button class="interest-button" onclick="window.location.href='#'">Web Development</button>
             <button class="interest-button" onclick="window.location.href='#'">Machine Learning</button>
             <button class="interest-button" onclick="window.location.href='#'">Data Science</button>
             <button class="interest-button" onclick="window.location.href='#'">Mobile Apps</button>
