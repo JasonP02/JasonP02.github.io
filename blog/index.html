@@ -4,28 +4,32 @@ title: Blog
 ---
 
 <div class="blog-section">
-  <div class="section-header">
-    <h2>Blog</h2>
+  <div class="blog-header">
+    <h1>Blog</h1>
   </div>
 
   <div class="blog-posts">
     {% for post in site.posts %}
-      <article class="blog-post-preview">
-        <h3 class="post-title">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h3>
-        <div class="post-meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-        </div>
-        {% if post.excerpt %}
-          <div class="post-excerpt">
-            {{ post.excerpt }}
-          </div>
+      <div class="blog-post-card">
+        {% if post.image %}
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
         {% endif %}
-        <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
-      </article>
+        <div class="post-content">
+          <h2>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%B %-d, %Y" }}
+            </time>
+          </div>
+          {% if post.excerpt %}
+            <div class="post-excerpt">
+              {{ post.excerpt }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
     {% endfor %}
   </div>
 </div> 
