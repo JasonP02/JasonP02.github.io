@@ -1,0 +1,23 @@
+.interest-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.interest-button {
+  padding: 0.8rem 1.5rem;
+  background: var(--color-card-bg);
+  border: 2px solid var(--color-accent);
+  border-radius: 25px;
+  color: var(--color-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+
+  &:hover {
+    background: var(--color-accent);
+    color: white;
+  }
+} 

@@ -1,0 +1,64 @@
+# Domain categories
+domains:
+  - id: machine-learning
+    name: Machine Learning
+  - id: robotics
+    name: Robotics
+  - id: software
+    name: Software Engineering
+
+# Update project data to include domains
+projects:
+  neural_networks:
+    title: "Neural Networks from Scratch"
+    date: "Sept 2023 - Nov 2023"
+    status: "completed"
+    domain: machine-learning
+    
+  sparse_autoencoder:
+    title: "Sparse Autoencoder Investigations"
+    date: "Jan 2024 - Present"
+    status: "ongoing"
+    domain: machine-learning
+    
+  corn_robot:
+    title: "Corn Monitoring Robot"
+    date: "Aug 2023 - Dec 2023"
+    status: "completed"
+    domain: robotics
+    
+  cup_manipulation:
+    title: "Autonomous Cup Manipulation"
+    date: "Jan 2023 - Dec 2023"
+    status: "completed"
+    domain: robotics
+    
+  slam:
+    title: "SLAM Implementation"
+    date: "Oct 2023 - Dec 2023"
+    status: "completed"
+    domain: robotics 
+
+title: Jason Pett
+email: jasondpett@gmail.com
+description: Portfolio of robotics and software projects
+baseurl: ""
+url: "https://jasonp02.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project" 

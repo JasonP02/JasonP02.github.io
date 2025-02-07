@@ -1,0 +1,11 @@
+<h2>Domains</h2>
+<div class="interest-buttons">
+  {% for domain in site.data.domains %}
+    <button 
+      class="interest-button"
+      onclick="document.getElementById('{{ domain.id }}').scrollIntoView({ behavior: 'smooth' });"
+    >
+      {{ domain.name }}
+    </button>
+  {% endfor %}
+</div> 

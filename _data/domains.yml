@@ -1,0 +1,11 @@
+- id: machine-learning
+  name: Machine Learning
+  description: Deep learning, neural networks, and AI research
+
+- id: robotics
+  name: Robotics
+  description: Autonomous systems and robotic control
+
+- id: software
+  name: Software Engineering
+  description: General programming and software development 

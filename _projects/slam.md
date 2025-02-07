@@ -1,11 +1,12 @@
 ---
 layout: project
 title: "SLAM Implementation"
-subtitle: "Building path planning and SLAM systems from scratch"
-date: "October 2023 - December 2023"
+subtitle: "Simultaneous Localization and Mapping"
+date: "Oct 2023 - Dec 2023"
 status: "completed"
-image: "/images/SLAM.jpg"
-github: "https://github.com/yourusername/slam-project"
+domain: robotics
+image: "/images/slam.jpg"
+github: "https://github.com/jasonp02/slam"
 ---
 
 ## Overview

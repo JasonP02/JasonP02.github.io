@@ -1,0 +1,10 @@
+<a href="{{ project.url }}" class="project-card">
+  <img src="{{ project.image }}" alt="{{ project.title }}">
+  <div class="project-info">
+    <div>
+      <h4>{{ project.title }}</h4>
+      <p>{{ project.subtitle }}</p>
+      {% include project-meta.html date=project.date status=project.status %}
+    </div>
+  </div>
+</a> 
