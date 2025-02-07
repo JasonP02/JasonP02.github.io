@@ -1,28 +1,55 @@
 # Site settings
-title: Your Site Title
-description: Your site description
-email: your.email@example.com
+
+title: Jason Pettinato's Website
+
+description: Personal portfolio website showcasing projects in robotics and machine learning
+
+email: jasondpett@gmail.com
+
 baseurl: "" 
-url: "" 
+
+url: "https://jasonp02.github.io" 
+
+
 
 # Build settings
+
 markdown: kramdown
+
 sass:
+
   style: compressed
+
   sass_dir: _sass
 
+
+
 plugins:
+
   - jekyll-feed
+
   - jekyll-sass-converter
 
+
+
 collections:
+
   projects:
+
     output: true
+
     permalink: /projects/:path/
 
+
+
 defaults:
+
   - scope:
+
       path: ""
+
       type: "projects"
+
     values:
+
       layout: "project"
