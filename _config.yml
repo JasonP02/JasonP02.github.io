@@ -1,26 +1,28 @@
 # Site settings
-title: Jason's Portfolio
-description: Personal portfolio showcasing projects in machine learning, robotics, and software engineering
+title: Your Site Title
+description: Your site description
 email: your.email@example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jasonp02.github.io" # the base hostname & protocol
+baseurl: "" 
+url: "" 
 
-# Build settings.
+# Build settings
 markdown: kramdown
+sass:
+  style: compressed
+  sass_dir: _sass
+
 plugins:
   - jekyll-feed
   - jekyll-sass-converter
 
-# Collections
 collections:
   projects:
     output: true
     permalink: /projects/:path/
 
-# Defaults
 defaults:
   - scope:
       path: ""
       type: "projects"
     values:
-      layout: "project" 
+      layout: "project"
