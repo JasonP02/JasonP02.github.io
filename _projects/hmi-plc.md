@@ -12,7 +12,7 @@ has_video: false
 
 
 ## Overview
-Development of a Human Machine Interface (HMI) system integrated with Allen Bradley PLC, designed to operate under specific operational constraints and requirements.
+Development of a Human Machine Interface (HMI) system integrated with Allen Bradley PLC, designed to operate under specific operational constraints and requirements. This was the culmination of a semester long 'concrete pouring process' that we were implementing. A lot of self learning, and some fun ;)
 
 ## Technical Details
 • Allen Bradley PLC programming
