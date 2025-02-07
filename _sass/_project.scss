@@ -88,11 +88,14 @@
 
 .back-button {
   display: inline-block;
-  text-decoration: none;
-  color: var(--color-primary);
   margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--color-accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
   
   &:hover {
-    color: var(--color-accent);
+    background: darken(var(--color-accent), 10%);
   }
 } 
