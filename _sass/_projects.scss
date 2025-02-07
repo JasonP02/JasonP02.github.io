@@ -111,12 +111,12 @@
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.85);
   color: white;
-  transform: translateY(100%);
+  transform: translateY(calc(100% - 4rem));
   transition: transform var(--transition-speed);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: calc(100% - 4rem);
+  height: 100%;
   z-index: 1;
 
   .project-overview {
