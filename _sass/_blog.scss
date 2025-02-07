@@ -28,10 +28,16 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-speed);
+  transition: all var(--transition-speed);
+  position: relative;
   
   &:hover {
     transform: translateY(-4px);
+    
+    .post-excerpt {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   .post-image {
@@ -63,7 +69,7 @@
     .post-meta {
       font-size: 0.9rem;
       color: var(--color-light-text);
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
     
     .post-excerpt {
@@ -71,6 +77,9 @@
       line-height: 1.6;
       color: var(--color-light-text);
       margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all var(--transition-speed);
     }
   }
 }
@@ -97,9 +106,9 @@
   }
 
   .post-content {
-    max-width: 900px; // Slightly wider than project pages
+    max-width: 800px; // Match project page width
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem; // Increased horizontal padding
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--color-primary);
@@ -147,23 +156,22 @@
   display: flex;
   gap: 1rem;
   margin-top: 3rem;
-  grid-column: 2;
+  max-width: 800px; // Match content width
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
 
-  .back-button,
-  .home-button {
+  .back-button {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
+    background: var(--color-accent);
+    color: white;
     text-decoration: none;
     border-radius: 6px;
     transition: all var(--transition-speed);
     font-weight: 500;
-  }
-
-  .back-button {
-    background: var(--color-accent);
-    color: white;
     
     &:hover {
       background: var(--color-hover);
@@ -171,9 +179,18 @@
   }
 
   .home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.4rem;
     background: transparent;
     color: var(--color-accent);
     border: 2px solid var(--color-accent);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all var(--transition-speed);
+    font-weight: 500;
+    margin-left: auto;
     
     &:hover {
       background: var(--color-accent);
@@ -190,13 +207,8 @@
 
 @media (max-width: 768px) {
   .blog-post {
-    grid-template-columns: 1fr;
-    padding: 3rem 1rem;
-    
-    .post-header,
     .post-content {
-      grid-column: 1;
-      padding: 0 1rem;
+      padding: 2rem 1rem;
     }
   }
   
@@ -205,8 +217,14 @@
   }
 
   .blog-navigation {
-    grid-column: 1;
-    padding: 0 1rem;
     flex-direction: column;
+    padding: 0 1rem;
+    
+    .back-button,
+    .home-button {
+      width: 100%;
+      justify-content: center;
+      margin-left: 0;
+    }
   }
 } 
