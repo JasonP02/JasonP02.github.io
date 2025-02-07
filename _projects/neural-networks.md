@@ -16,9 +16,9 @@ understanding of how neural networks work at their core, without the abstraction
 provided by modern frameworks.
 
 ## Technical Details
-• Implemented backpropagation from first principles
-• Built optimizers (SGD, Adam) and activation functions
-• Created custom loss functions and metrics
+• Implemented backpropagation from first principles\
+• Built optimizers (SGD, Adam) and activation functions\
+• Created custom loss functions and metrics\
 • Developed data preprocessing pipelines
 • Implemented various layer types (Dense, Conv2D, LSTM cells)
 
