@@ -12,22 +12,18 @@
     rel="stylesheet"
   />
   <style>
-    /*
-      ============== 
-      COLOR PALETTE 
-      ============== 
-      Tweaked for a slightly off-white background. 
-      Adjust these variables to refine the look.
-    */
+    /* ================
+       COLOR PALETTE
+       ================ */
     :root {
-      --color-background: #fdfdfc;      /* main background (off-white) */
-      --color-primary: #0a0a0a;        /* main text color */
-      --color-accent: #206FFF;         /* accent color for buttons/links */
-      --color-nav-bg: #ffffff;         /* nav background */
-      --color-section-bg: #fafaf8;     /* subtle background for sections */
-      --color-card-bg: #ffffff;        /* card backgrounds */
-      --color-light-text: #6b7280;     /* lighter text for subheadings/notes */
-      --transition-speed: 0.3s;        /* transition speed for hover effects */
+      --color-background: #fdfdfc;      /* off-white background */
+      --color-primary: #0a0a0a;         /* main text color */
+      --color-accent: #206FFF;          /* accent color for buttons/links */
+      --color-nav-bg: #ffffff;          /* nav background */
+      --color-section-bg: #fafaf8;      /* subtle background for sections */
+      --color-card-bg: #ffffff;         /* card backgrounds */
+      --color-light-text: #6b7280;      /* lighter text for subheadings/notes */
+      --transition-speed: 0.3s;         /* transition speed for hover effects */
     }
 
     /*
@@ -214,6 +210,8 @@
       position: relative;
       flex-shrink: 0;
       transition: transform var(--transition-speed);
+      display: flex;
+      flex-direction: column; /* So the "See More" button can stay at the bottom easily */
     }
 
     .project-card:hover {
@@ -228,12 +226,16 @@
     }
 
     .project-info {
+      flex: 1; /* Take up available space so "See More" can be pinned below */
       padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .project-info h4 {
       font-size: 1.3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       color: var(--color-primary);
       font-weight: 600;
     }
@@ -253,17 +255,27 @@
       padding-top: 1rem;
     }
 
-    .project-link {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: var(--color-accent);
-      text-decoration: none;
+    /*
+      SEE MORE BUTTON
+      - Obvious yet not distracting
+    */
+    .see-more-btn {
+      margin-top: 1rem;
+      align-self: flex-start; /* or center, depending on preference */
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
       font-weight: 500;
-      transition: color var(--transition-speed);
+      transition: background var(--transition-speed), transform var(--transition-speed);
+      text-decoration: none;
     }
 
-    .project-link:hover {
-      color: #0054c7;
+    .see-more-btn:hover {
+      background: #0054c7;
+      transform: translateY(-2px);
     }
 
     /*
@@ -296,20 +308,22 @@
       <!-- CIRCULAR FRAMED PHOTO -->
       <div class="profile-image-container">
         <!-- Replace with your actual photo path -->
-        <img src="images/Me.JPEG alt="Photo of Jason" class="profile-image" />
+        <img src="images/my_photo.jpg" alt="Photo of Jason" class="profile-image" />
       </div>
 
       <h1>Hello, I'm Jason</h1>
-      <p>Hello, I'm Jason! I'm a recent graduate from UMass Amherst, where I got my masters degree in mechanical engineering.
-
-I am looking for open positions in virtually any domain. The most important thing to me is that I can work on interesting problems with a great team.
-
-Some of my interests are running, meditation, reading, and researching a subfield of machine learning called mechanistic interpretability.
-
-You might wonder why a mechanical engineer has so many software projects. The primary reason is that it is cheap and fast to make things that you can see working. 
-However, I am interested in solving any problem that will have an impact on a lot of people in a positive way.
-
-Below are some projects, and you'll see some other details about me sprinkled in...</p>
+      <p>
+        Hello, I'm Jason! I'm a recent graduate from UMass Amherst, where I got my masters degree in mechanical engineering.
+        
+        I am looking for open positions in virtually any domain. The most important thing to me is that I can work on interesting problems with a great team.
+        
+        Some of my interests are running, meditation, reading, and researching a subfield of machine learning called mechanistic interpretability.
+        
+        You might wonder why a mechanical engineer has so many software projects. The primary reason is that it is cheap and fast to make things that you can see working. 
+        However, I am interested in solving any problem that will have an impact on a lot of people in a positive way.
+        
+        Below are some projects, and you'll see some other details about me sprinkled in...
+      </p>
     </section>
   </div>
 
@@ -346,21 +360,27 @@ Below are some projects, and you'll see some other details about me sprinkled in
     <div id="machine-learning" class="project-domain">
       <h3>Machine Learning</h3>
       <div class="project-container">
+        
         <!-- Neural Networks from Scratch -->
         <div class="project-card">
           <img src="images/NeuralNetworks.jpg" alt="Neural Networks from Scratch">
           <div class="project-info">
-            <h4>Neural Networks from Scratch</h4>
-            <div class="project-overview">
-              <p>
-                Implemented common neural network architectures (MLP, CNN, RNN, LSTM, Transformer) 
-                using only NumPy, without autograd.
-              </p>
+            <div>
+              <h4>Neural Networks from Scratch</h4>
+              <div class="project-overview">
+                <p>
+                  Implemented common neural network architectures (MLP, CNN, RNN, LSTM, Transformer) 
+                  using only NumPy, without autograd.
+                </p>
+              </div>
+              <div class="learning-points">
+                <p>Key Learning: Gained deep intuitive understanding of tensor operations 
+                and neural network fundamentals</p>
+              </div>
             </div>
-            <div class="learning-points">
-              <p>Key Learning: Gained deep intuitive understanding of tensor operations 
-              and neural network fundamentals</p>
-            </div>
+            
+            <!-- See More Button -->
+            <a href="project-details-neural-networks.html" class="see-more-btn">See More</a>
           </div>
         </div>
 
@@ -368,23 +388,28 @@ Below are some projects, and you'll see some other details about me sprinkled in
         <div class="project-card">
           <img src="images/SAE.jpg" alt="Sparse Autoencoder">
           <div class="project-info">
-            <h4>Sparse Autoencoder Investigations</h4>
-            <div class="project-overview">
-              <p>
-                This is an ongoing for-fun / investigation into LLM reasoning models (o1, o3. etc) 
-                and how they are so good. The goal is to expand the language model's representations 
-                so we can understand them, yielding many insights.
-              </p>
-              <p>
-                Learning points: working with WSL, linux environments, training neural networks 
-                using GPU hosting services, hypothesis testing, and experimentation.
-              </p>
+            <div>
+              <h4>Sparse Autoencoder Investigations</h4>
+              <div class="project-overview">
+                <p>
+                  Ongoing research into LLM reasoning models (o1, o3, etc.) and how they excel. 
+                  The goal is to expand the language model's representations for better interpretability.
+                </p>
+                <p>
+                  Learning points: working with WSL, Linux environments, GPU hosting services, 
+                  hypothesis testing, and experimentation.
+                </p>
+              </div>
+              <div class="learning-points">
+                <p>Key Learning: Building and managing complex Python projects and data pipelines</p>
+              </div>
             </div>
-            <div class="learning-points">
-              <p>Key Learning: Experience with complex Python projects and data pipelines</p>
-            </div>
+            
+            <!-- See More Button -->
+            <a href="project-details-sparse-autoencoder.html" class="see-more-btn">See More</a>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -392,23 +417,30 @@ Below are some projects, and you'll see some other details about me sprinkled in
     <div id="design" class="project-domain">
       <h3>Design</h3>
       <div class="project-container">
+
         <!-- Corn Monitoring Robot -->
         <div class="project-card">
           <img src="images/CMR_Photo.jpg" alt="Corn Monitoring Robot">
           <div class="project-info">
-            <h4>Corn Monitoring Robot</h4>
-            <div class="project-overview">
-              <p>
-                An autonomous corn-tracking robot for my senior capstone. 
-                Handled design work and full software stack implementation 
-                using ESP32 and Raspberry Pi.
-              </p>
+            <div>
+              <h4>Corn Monitoring Robot</h4>
+              <div class="project-overview">
+                <p>
+                  An autonomous corn-tracking robot for my senior capstone. 
+                  Handled design work and full software stack implementation 
+                  using ESP32 and Raspberry Pi.
+                </p>
+              </div>
+              <div class="learning-points">
+                <p>Key Learning: The importance of rapid prototyping in robotics development</p>
+              </div>
             </div>
-            <div class="learning-points">
-              <p>Key Learning: The importance of rapid prototyping in robotics development</p>
-            </div>
+
+            <!-- See More Button -->
+            <a href="project-details-corn-robot.html" class="see-more-btn">See More</a>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -416,23 +448,29 @@ Below are some projects, and you'll see some other details about me sprinkled in
     <div id="programming" class="project-domain">
       <h3>Programming</h3>
       <div class="project-container">
+
         <!-- Autonomous Cup Manipulation -->
         <div class="project-card">
           <img src="images/LoCoBot.jpg" alt="LoCoBot">
           <div class="project-info">
-            <h4>Autonomous Cup Manipulation</h4>
-            <div class="project-overview">
-              <p>
-                Two-semester research project focused on autonomous manipulation 
-                of water-filled cups using the LoCoBot platform.
-              </p>
+            <div>
+              <h4>Autonomous Cup Manipulation</h4>
+              <div class="project-overview">
+                <p>
+                  Two-semester research project focused on autonomous manipulation 
+                  of water-filled cups using the LoCoBot platform.
+                </p>
+              </div>
+              <div class="learning-points">
+                <p>
+                  Key Learning: Developed a strong foundation in Linux, ROS, 
+                  dependency management, and core software engineering principles.
+                </p>
+              </div>
             </div>
-            <div class="learning-points">
-              <p>
-                Key Learning: Developed strong foundation in Linux, ROS, 
-                dependency management, and core software engineering principles.
-              </p>
-            </div>
+
+            <!-- See More Button -->
+            <a href="project-details-cup-manipulation.html" class="see-more-btn">See More</a>
           </div>
         </div>
 
@@ -440,19 +478,24 @@ Below are some projects, and you'll see some other details about me sprinkled in
         <div class="project-card">
           <img src="images/SLAM.jpg" alt="SLAM">
           <div class="project-info">
-            <h4>SLAM Implementation</h4>
-            <div class="project-overview">
-              <p>
-                Built path planning and SLAM system from the ground up in Python, 
-                moving beyond ROS abstractions used in robotics competitions.
-              </p>
+            <div>
+              <h4>SLAM Implementation</h4>
+              <div class="project-overview">
+                <p>
+                  Built path planning and SLAM system from the ground up in Python, 
+                  going beyond the ROS abstractions used in robotics competitions.
+                </p>
+              </div>
+              <div class="learning-points">
+                <p>
+                  Key Learning: Experience with complex Python projects and data pipelines, 
+                  including bundle adjustment challenges.
+                </p>
+              </div>
             </div>
-            <div class="learning-points">
-              <p>
-                Key Learning: Experience with complex Python projects and data pipelines, 
-                despite challenges with bundle adjustment implementation
-              </p>
-            </div>
+
+            <!-- See More Button -->
+            <a href="project-details-slam.html" class="see-more-btn">See More</a>
           </div>
         </div>
 
