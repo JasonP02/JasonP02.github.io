@@ -2,7 +2,7 @@
 layout: project
 title: "Corn Monitoring Robot"
 subtitle: "Autonomous agricultural monitoring system"
-date: "Aug 2023 - Dec 2023"
+date: "Aug 2023 - May 2024"
 status: "completed"
 domain: robotics
 image: "/images/CMR_Photo.jpg"
@@ -10,19 +10,16 @@ github: "https://github.com/jasonp02/corn-robot"
 ---
 
 ## Overview
-Development of an autonomous robot for monitoring corn fields and collecting
-agricultural data.
+Development of an autonomous robot for monitoring corn plants in a greenhouse. Used for research purposes by the Bartlett Lab at UMass Amherst
 
 ## Technical Details
-• Autonomous navigation system
-• Environmental sensing
-• Data collection pipeline
-• Robust mechanical design
+• Autonomous movement system design
+• Data collection pipeline for remote image access
+• Robust mechanical design done in Solid Works
 
 <div class="tech-stack">
   <span class="tech-tag">Robotics</span>
   <span class="tech-tag">Python</span>
-  <span class="tech-tag">ROS</span>
   <span class="tech-tag">Mechanical Design</span>
 </div>
 
@@ -33,6 +30,5 @@ agricultural data.
 • Autonomous navigation
 
 ## Challenges & Solutions
-The biggest challenge was ensuring reliable navigation in unstructured agricultural
-environments. This was solved through iterative testing and refinement of both
-hardware and software components, leading to a robust final design. 
+The largest challenges were not being able to order our parts early! I learned the valuable importance of being able to get started on a project and build fast.
+The hardest engineering challenge was serial communication and electrical interference issues that we resolved by many hours of begugging and testing different parts of the system

@@ -2,11 +2,11 @@
 layout: project
 title: "SLAM Implementation"
 subtitle: "Simultaneous Localization and Mapping"
-date: "Oct 2023 - Dec 2023"
+date: "Oct 2024 - Dec 2024"
 status: "completed"
 domain: robotics
 image: "images/SLAM.jpg"
-github: "https://github.com/jasonp02/slam"
+github: "https://github.com/jasonp02/slam](https://github.com/JasonP02/SLAM_MH01"
 ---
 
 ## Overview
@@ -19,8 +19,10 @@ principles.
 • Implementation of core SLAM algorithms
 • Bundle adjustment optimization
 • Feature detection and matching
-• Path planning algorithms
+• Loop closure detection
 • Performance optimization techniques
+• Complex data processing and storage pipeline
+
 
 <div class="tech-stack">
   <span class="tech-tag">Computer Vision</span>
@@ -38,5 +40,4 @@ principles.
 
 ## Challenges & Solutions
 The main challenge was implementing efficient bundle adjustment for large-scale
-mapping. This was addressed through careful algorithm optimization and the use
-of sparse matrix operations, though some computational challenges remained.
+mapping. I had a lot of trouble deciding how to decide what data to keep since the end goal of this project was to run this on a PI. In the end, I got busy with other things an did not finish this project. Loop closure and BA is tough!

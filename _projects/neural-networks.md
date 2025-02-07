@@ -2,7 +2,7 @@
 layout: project
 title: "Neural Networks from Scratch"
 subtitle: "Building deep learning architectures using only NumPy"
-date: "September 2023 - November 2023"
+date: "November 2024 - December 2024"
 status: "completed"
 domain: machine-learning
 image: "/images/NeuralNetworks.jpg"
@@ -16,9 +16,9 @@ understanding of how neural networks work at their core, without the abstraction
 provided by modern frameworks.
 
 ## Technical Details
-• Implemented backpropagation from first principles
-• Built optimizers (SGD, Adam) and activation functions
-• Created custom loss functions and metrics
+• Implemented backpropagation from first principles\
+• Built optimizers (SGD, Adam) and activation functions\
+• Created custom loss functions and metrics\
 • Developed data preprocessing pipelines
 • Implemented various layer types (Dense, Conv2D, LSTM cells)
 
