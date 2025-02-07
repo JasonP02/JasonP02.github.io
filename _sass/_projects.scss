@@ -71,6 +71,11 @@
     
     .project-title-bar {
       transform: translateY(-25%);
+      
+      .see-more-text {
+        opacity: 1;
+        height: auto;
+      }
     }
   }
 }
@@ -97,7 +102,6 @@
   color: white;
   z-index: 2;
   transition: transform var(--transition-speed) ease;
-  transform: translateY(0);
 
   h4 {
     font-size: 1.65rem;
@@ -109,14 +113,10 @@
     font-size: 1.1rem;
     margin-top: 0.25rem;
     opacity: 0;
-    transition: opacity var(--transition-speed);
+    height: 0;
+    overflow: hidden;
+    transition: all var(--transition-speed);
     color: rgba(255, 255, 255, 0.9);
-    display: none;
-  }
-
-  &:hover .see-more-text {
-    opacity: 1;
-    display: block;
   }
 }
 

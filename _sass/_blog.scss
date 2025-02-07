@@ -106,9 +106,9 @@
   }
 
   .post-content {
-    max-width: 33%;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--color-primary);
@@ -210,7 +210,6 @@
 @media (max-width: 768px) {
   .blog-post {
     .post-content {
-      max-width: 90%;
       padding: 2rem 1rem;
     }
   }
