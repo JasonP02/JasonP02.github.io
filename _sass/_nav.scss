@@ -15,8 +15,10 @@ nav {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    gap: 3rem;
-    padding: 1.25rem 2rem;
+    /* Change from 3rem to 2rem to reduce “too wide” spacing */
+    gap: 2rem;
+    /* Reduce top/bottom from 1.25rem to 0.75rem */
+    padding: 0.75rem 2rem;
   }
 
   a {
@@ -36,12 +38,13 @@ nav {
       left: 0;
       background-color: var(--color-accent);
       transform: scaleX(0);
+      transform-origin: left center;
       transition: transform var(--transition-speed);
     }
 
     &:hover {
       color: var(--color-accent);
-      
+
       &:after {
         transform: scaleX(1);
       }
@@ -50,7 +53,7 @@ nav {
 
   .dropdown {
     position: relative;
-    
+
     &:hover .dropdown-content {
       display: block;
     }
@@ -74,7 +77,7 @@ nav {
       display: block;
       padding: 0.75rem 1.25rem;
       text-align: left;
-      
+
       &:after {
         display: none;
       }
@@ -84,4 +87,4 @@ nav {
       }
     }
   }
-} 
+}

@@ -9,12 +9,12 @@
   --color-border: #eaeaea;
   --transition-speed: 0.2s;
   --container-width: 1200px;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* OPTIONAL: If you want smaller default margins, define some spacing variables. 
+     For instance:
+  */
+  --space-section: 3rem;    /* Instead of 4rem or 5rem */
+  --space-section-lg: 4rem; /* For truly large spacing */
 }
 
 body {
@@ -23,4 +23,6 @@ body {
   background-color: var(--color-background);
   color: var(--color-primary);
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
