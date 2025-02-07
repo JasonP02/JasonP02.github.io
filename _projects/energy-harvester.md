@@ -27,7 +27,7 @@ Analysis and implementation of a nonlinear energy harvesting system based on mag
 The bifurcation study was the most challenging part of the project. I had to implement a numerical method to find the fixed points of the system and then use a bifurcation analysis to find the bifurcations. Here is one example of a bifurcation diagram I generated:
 
 <div class="image-gallery">
-  <img src="{{ '/assets/images/bifurcation_diagram.png' | relative_url }}" alt="Bifurcation Diagram">
+  <img src="{{ '/assets/images/energy-harvester-bifurcation.png' | relative_url }}" alt="Bifurcation Diagram">
 </div>
 
 <div class="tech-stack">

@@ -8,7 +8,7 @@ layout: default
 </header>
 
 <main class="main-content">
-  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
+  <img src="{{ page.header_image | default: page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
   
   {% if page.has_github %}
   <div class="github-container">

@@ -6,6 +6,7 @@ date: "Aug 2023 - May 2024"
 status: "completed"
 domain: robotics
 image: "/assets/images/corn-robot-photo.jpg"
+header_image: "/assets/images/corn-robot-photo.jpg"
 has_github: false
 ---
 
