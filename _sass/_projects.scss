@@ -109,10 +109,17 @@
   border-radius: 0 4px 4px 0;
   transition: left var(--transition-speed);
   z-index: 2;
+  opacity: 0;
 }
 
 .project-card:hover .project-hover-bar {
   left: 0;
+  opacity: 1;
+}
+
+.github-container {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 // Responsive breakpoints
