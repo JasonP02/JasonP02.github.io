@@ -113,7 +113,7 @@
   border-radius: 6px;
   transition: all var(--transition-speed);
   font-weight: 500;
-  margin-left: auto;
+  // Remove any margin-left (previously used to push it right)
   
   &:hover {
     background: var(--color-accent);
@@ -124,6 +124,7 @@
     font-size: 1.2rem;
   }
 }
+
 
 @media (max-width: 640px) {
   .project-actions {
