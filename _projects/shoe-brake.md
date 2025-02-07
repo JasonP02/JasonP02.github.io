@@ -32,4 +32,4 @@ Design of a fail-safe shoe brake mechanism that activates during power failure s
 • Budget management in design
 
 ## Challenges & Solutions
-The primary challenge was balancing the spring forces with the solenoid capabilities while staying within budget constraints. This required careful component selection and multiple design iterations to achieve optimal performance while maintaining safety requirements. 
+The primary challenge was balancing the spring forces with the solenoid capabilities while staying within budget constraints. Since this problem had a clear solution, I figured there was an optimal sensor (and there was) for our force requirements.
