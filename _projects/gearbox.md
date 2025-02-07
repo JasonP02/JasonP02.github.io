@@ -5,7 +5,7 @@ subtitle: "12:1 ratio gearbox with geometric constraints"
 date: "April 2023"
 status: "completed"
 domain: design
-image: "/assets/images/gearbox.jpg"
+image: "/assets/images/gearbox.png"
 has_github: false
 ---
 

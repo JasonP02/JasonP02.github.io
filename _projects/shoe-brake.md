@@ -5,7 +5,7 @@ subtitle: "Power-failure activated braking mechanism"
 date: "July 2023"
 status: "completed"
 domain: design
-image: "/assets/images/shoe_brake.jpg"
+image: "/assets/images/shoe_brake.png"
 has_github: false
 ---
 

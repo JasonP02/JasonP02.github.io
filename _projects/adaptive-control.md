@@ -22,6 +22,8 @@ Implementation of adaptive control strategies for the Emika Panda robotic arm, f
 • Comparison with Ziegler-Nichols method
 • Performance analysis under varying conditions
 
+I did this project with my friend, and I was responsible for the adaptive control and simulation.
+
 <div class="tech-stack">
   <span class="tech-tag">Python</span>
   <span class="tech-tag">Control Systems</span>

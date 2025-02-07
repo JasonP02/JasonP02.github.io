@@ -5,7 +5,7 @@ subtitle: "Autonomous agricultural monitoring system"
 date: "Aug 2023 - May 2024"
 status: "completed"
 domain: robotics
-image: "/assets/images/CMR_Photo.jpg"
+image: "/assets/images/corn-robot-plant.jpg"
 has_github: false
 ---
 
@@ -25,8 +25,16 @@ The coupler mechanism enables the stepper motor for x movement to be coupled to 
 ### Rotating Base Design
 The rotating base was implemented to capture multiple angles of plant data. Rather than implementing a more complex polar movement system or additional axis, we designed a rotating platform that the plant sits on. This solution enables data capture from multiple angles, particularly useful when leaves occlude the camera view.
 
+<div class="image-gallery">
+  <img src="{{ '/assets/images/corn-robot-coupler.png' | relative_url }}" alt="Coupler Mechanism">
+  <img src="{{ '/assets/images/corn-robot-rotating-base.png' | relative_url }}" alt="Rotating Base">
+  <img src="{{ '/assets/images/corn-robot-photo.jpg' | relative_url }}" alt="Corn Monitoring Robot">
+  <img src="{{ '/assets/images/corn-robot-drawing.png' | relative_url }}" alt="Corn Monitoring Robot Drawing">
+</div>
 <div class="tech-stack">
+
   <span class="tech-tag">Robotics</span>
+
   <span class="tech-tag">Python</span>
   <span class="tech-tag">Mechanical Design</span>
   <span class="tech-tag">SolidWorks</span>

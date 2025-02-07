@@ -5,11 +5,11 @@ subtitle: "Industrial automation control interface"
 date: "May 2023"
 status: "completed"
 domain: other
-image: "/assets/images/hmi_plc.jpg"
+image: "/assets/images/HMI.png"
 has_github: false
-has_video: true
-video: "/assets/videos/hmi_demo.mp4"
+has_video: false
 ---
+
 
 ## Overview
 Development of a Human Machine Interface (HMI) system integrated with Allen Bradley PLC, designed to operate under specific operational constraints and requirements.
