@@ -59,18 +59,16 @@
 }
 
 .project-card {
+  /* Remove or comment out the aspect-ratio property */
+  /* aspect-ratio: 1 / 1; */
+
+  display: flex;
+  flex-direction: column;
   background: var(--color-card-bg);
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--color-border);
   transition: all var(--transition-speed);
-  /* 
-    Remove fixed height and instead use aspect-ratio for 
-    a generally square shape. 
-  */
-  aspect-ratio: 1 / 1;
-  display: flex;
-  flex-direction: column;
 
   &:hover {
     transform: translateY(-4px);
@@ -78,12 +76,11 @@
   }
 
   .project-image-container {
-    width: 100%;
-    height: 0;
-    padding-bottom: 70%;
+    /* If you still want a 16:9 aspect ratio for the image, do this: */
     position: relative;
-    overflow: hidden;
-    
+    width: 100%;
+    padding-bottom: 56.25%; /* ~16:9 ratio */
+
     img {
       position: absolute;
       top: 0;
@@ -95,52 +92,27 @@
   }
 
   .project-info {
-    padding: 2rem;
+    padding: 1.5rem 1.5rem 2rem; /* Slightly more bottom padding for the button? */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
+    gap: 0.75rem; /* space out the text elements nicely */
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
     color: var(--color-primary);
+    margin-bottom: 0.25rem;
   }
 
   .project-overview {
     color: var(--color-light-text);
-    font-size: 1.1rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.4;
+    /* If you want only ~2 lines visible, or remove the clamp if you want full text */
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-  }
-
-  .see-more-btn {
-    display: inline-block;
-    padding: 0.65rem 1.4rem;
-    margin-top: 1.5rem;
-    font-size: 0.95rem;
-    border: 2px solid var(--color-accent);
-    border-radius: 25px;
-    background: transparent;
-    color: var(--color-accent);
-    text-decoration: none;
-    cursor: pointer;
-    transition: background var(--transition-speed), color var(--transition-speed);
-  
-    &:hover {
-      background: var(--color-accent);
-      color: #fff;
-    }
-  }
-  
-
-  @media (max-width: 767px) {
-    aspect-ratio: auto;
-    min-height: 400px;
   }
 }
