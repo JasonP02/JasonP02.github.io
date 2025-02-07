@@ -2,7 +2,7 @@
 layout: project
 title: "SLAM Implementation"
 subtitle: "Simultaneous Localization and Mapping"
-date: "Oct 2023 - Dec 2023"
+date: "Oct 2024 - Dec 2024"
 status: "completed"
 domain: robotics
 image: "images/SLAM.jpg"
