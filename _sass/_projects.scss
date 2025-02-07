@@ -46,27 +46,25 @@
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Adjust minmax() as needed
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
   max-width: var(--container-width);
   margin: 0 auto;
 }
 
-  
 .project-info {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;  // Take up remaining space
+  flex-grow: 1;
 }
 
-  .see-more-btn {
-    margin-top: auto;  // Push to bottom
-    align-self: center;  // Center horizontally
-    padding: 0.8rem 2rem;  // Larger button
-    font-weight: 600;  // Bolder text
-    letter-spacing: 0.5px;  // Better text spacing
-  }
+.see-more-btn {
+  margin-top: auto;
+  align-self: center;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
