@@ -1,27 +1,28 @@
 :root {
-  --color-background: #FAFAFA;
-  --color-primary: #2D3748;
-  --color-accent: #3e9b32;  /* Forest green */
-  --color-nav-bg: rgba(250, 250, 250, 0.98);
-  --color-section-bg: #F7FAFC;
-  --color-card-bg: #FFFFFF;
-  --color-light-text: #718096;
-  --color-border: #E2E8F0;
-  --color-hover: #2a8c21;  /* Darker forest green for hover states */
+  --color-background: #F3F8F2;  /* Light sage background */
+  --color-primary: #2D3748;     /* Dark slate for text */
+  --color-accent: #3e9b32;      /* Forest green */
+  --color-nav-bg: rgba(243, 248, 242, 0.98); /* Matches background */
+  --color-section-bg: #E8F1E7;  /* Lighter sage for sections */
+  --color-card-bg: #FFFFFF;     /* Keep cards white for contrast */
+  --color-light-text: #4A6741;  /* Muted forest green for secondary text */
+  --color-border: #C7D9C5;      /* Soft sage for borders */
+  --color-hover: #2a8c21;       /* Darker forest green for hover states */
   --transition-speed: 0.2s;
-  --container-width: 1200px;
-
-  /* OPTIONAL: If you want smaller default margins, define some spacing variables. 
-     For instance:
-  */
-  --space-section: 3rem;    /* Instead of 4rem or 5rem */
-  --space-section-lg: 4rem; /* For truly large spacing */
+  --container-width: 1400px;    /* Increased from 1200px to reduce whitespace */
+  --space-section: 3rem;
+  --space-section-lg: 4rem;
 }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", 
                Roboto, Helvetica, Arial, sans-serif;
   background-color: var(--color-background);
+  background-image: 
+    linear-gradient(rgba(243, 248, 242, 0.97), rgba(243, 248, 242, 0.97)),
+    url('/images/leaves-pattern.png');
+  background-repeat: repeat;
+  background-size: 300px;
   color: var(--color-primary);
   line-height: 1.6;
   margin: 0;
@@ -36,11 +37,11 @@ body::after {
   content: '';
   position: fixed;
   top: 0;
-  width: 300px;
+  width: 400px; /* Increased from 300px */
   height: 100vh;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.2; /* Slightly more visible */
   background-repeat: repeat-y;
 }
 
