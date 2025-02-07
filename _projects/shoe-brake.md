@@ -2,7 +2,7 @@
 layout: project
 title: "Safety Shoe Brake System"
 subtitle: "Power-failure activated braking mechanism"
-date: "2023"
+date: "July 2023"
 status: "completed"
 domain: design
 image: "/assets/images/shoe_brake.jpg"
