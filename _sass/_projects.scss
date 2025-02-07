@@ -73,6 +73,11 @@
       opacity: 1;
       visibility: visible;
     }
+    
+    .see-more-hint {
+      right: 0.5rem;
+      opacity: 1;
+    }
   }
 }
 
@@ -105,12 +110,15 @@
 
   .see-more-hint {
     position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
+    top: 0.5rem;
+    right: -100%;
     font-style: italic;
-    font-size: 0.8rem;
-    opacity: 0.8;
+    font-size: 0.85rem;
+    opacity: 0;
+    padding: 0.3rem 0.8rem;
+    background: rgba(94, 90, 219, 0.9);
+    border-radius: 4px;
+    transition: all var(--transition-speed);
   }
 }
 

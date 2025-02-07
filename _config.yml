@@ -40,6 +40,12 @@ collections:
 
     permalink: /projects/:path/
 
+  posts:
+
+    output: true
+
+    permalink: /blog/:year/:month/:day/:title/
+
 
 
 defaults:
@@ -53,3 +59,13 @@ defaults:
     values:
 
       layout: "project"
+
+  - scope:
+
+      path: ""
+
+      type: "posts"
+
+    values:
+
+      layout: "post"

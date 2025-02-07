@@ -4,8 +4,4 @@
 
 - id: robotics
   name: Robotics
-  description: Autonomous systems and robotic control
-
-- id: software
-  name: Software Engineering
-  description: General programming and software development 
+  description: Autonomous systems and robotic control 
