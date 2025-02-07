@@ -10,7 +10,7 @@ has_github: false
 ---
 
 ## Overview
-Two-semester research project focused on autonomous manipulation of water-filled cups using the LoCoBot platform.
+Two-semester research project focused on autonomous manipulation of water-filled cups using the LoCoBot platform. Sadly there was a fire in the lab, and I transitioned to a different project with deep learning.
 
 ## Technical Details
 • Implemented ROS control systems
