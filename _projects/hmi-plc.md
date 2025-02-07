@@ -35,12 +35,3 @@ Development of a Human Machine Interface (HMI) system integrated with Allen Brad
 
 ## Challenges & Solutions
 The main challenge was ensuring reliable communication between the HMI and PLC while meeting all operational constraints. This was resolved through careful system design and thorough testing procedures.
-
-{% if page.has_video %}
-<div class="video-container">
-    <video controls>
-        <source src="{{ page.video | relative_url }}" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-{% endif %} 

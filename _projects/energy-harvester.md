@@ -35,5 +35,3 @@ Analysis and implementation of a nonlinear energy harvesting system based on mag
 
 ## Challenges & Solutions
 The main challenge was accurately reproducing the complex dynamics described in the original research paper. This was addressed through careful implementation of numerical methods and validation against published results.
-
-[View Full Report](/assets/pdfs/energy_harvester_report.pdf) 
