@@ -11,7 +11,7 @@ github: "https://github.com/jasonp02/sparse-autoencoder"
 
 ## Overview
 Research project focused on understanding and implementing sparse autoencoders
-for neural network interpretability.
+for neural network interpretability. This is an ongong project with a lot of unresolved details. Currently investigating how a pretrained SAE can investigate the chain of thought reasoning for models like OpenAI o1.
 
 ## Technical Details
 • Implementation of sparse autoencoder architectures
@@ -33,6 +33,5 @@ for neural network interpretability.
 • Research methodologies
 
 ## Challenges & Solutions
-The main challenge was setting up efficient development environments and managing
-computational resources. This was addressed through careful optimization of the
-training pipeline and strategic use of cloud computing resources. 
+The main challenge so far has been setting up efficient development environments and managing
+computational resources. Currently looking into training a SAE using vast.ai cloud compute.
