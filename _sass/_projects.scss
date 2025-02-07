@@ -70,11 +70,11 @@
     transform: translateY(-4px);
     
     .project-title-bar {
-      padding-bottom: 2.5rem;
+      height: 80px;
       
       .see-more-text {
         opacity: 1;
-        transform: translateY(0);
+        bottom: 0.75rem;
       }
     }
   }
@@ -97,12 +97,13 @@
   bottom: 0;
   left: 0;
   right: 0;
+  height: 60px;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   z-index: 2;
   overflow: hidden;
-  transition: transform var(--transition-speed);
+  transition: all var(--transition-speed);
 
   h4 {
     font-size: 1.1rem;
@@ -112,12 +113,11 @@
 
   .see-more-text {
     position: absolute;
-    bottom: 0.5rem;
     left: 1rem;
+    bottom: -20px;
     font-size: 0.9rem;
     font-style: italic;
     opacity: 0;
-    transform: translateY(100%);
     transition: all var(--transition-speed);
     pointer-events: none;
   }
