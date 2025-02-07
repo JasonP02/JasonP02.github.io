@@ -1,10 +1,10 @@
-- id: machine-learning
-  name: Machine Learning
-  description: Deep learning, neural networks, and AI research
-
 - id: robotics
   name: Robotics
   description: Autonomous systems and robotic control 
+
+- id: machine-learning
+  name: Machine Learning
+  description: Deep learning, neural networks, and AI research
 
 - id: design
   name: Mechanical Design

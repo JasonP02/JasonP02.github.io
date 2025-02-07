@@ -1,12 +1,11 @@
 <div class="section-header">
   <h2>Projects</h2>
 </div>
-{% assign domains = site.projects | map: "domain" | uniq %}
-{% for domain in domains %}
-  <div id="{{ domain }}" class="project-domain">
-    <h3>{{ domain | capitalize | replace: "-", " " }}</h3>
+{% for domain in site.data.domains %}
+  <div id="{{ domain.id }}" class="project-domain">
+    <h3>{{ domain.name }}</h3>
     <div class="project-container">
-      {% assign domain_projects = site.projects | where: "domain", domain %}
+      {% assign domain_projects = site.projects | where: "domain", domain.id %}
       {% for project in domain_projects %}
         {% include project-card.html project=project %}
       {% endfor %}
