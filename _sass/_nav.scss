@@ -53,10 +53,13 @@ nav {
 
   .dropdown {
     position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: -1rem;
     
     &:hover .dropdown-content {
       opacity: 1;
       visibility: visible;
+      pointer-events: auto;
       transform: translateX(-50%) translateY(0);
     }
   }
@@ -65,38 +68,32 @@ nav {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%) translateY(-10px);
+    transform: translateX(-50%) translateY(8px);
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     background: var(--color-nav-bg);
-    min-width: 180px;
+    min-width: 200px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--color-border);
     padding: 0.5rem 0;
-    margin-top: 0.5rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-out;
     z-index: 9999;
 
-    /* Add padding to create hover space */
     &:before {
       content: '';
       position: absolute;
-      top: -10px;
+      top: -16px;
       left: 0;
       right: 0;
-      height: 10px;
+      height: 16px;
     }
 
     a {
-      display: block;
-      padding: 0.75rem 1.25rem;
-      text-align: left;
-
-      &:after {
-        display: none;
-      }
-
+      padding: 0.75rem 1.5rem;
+      white-space: nowrap;
+      
       &:hover {
         background: var(--color-section-bg);
       }
