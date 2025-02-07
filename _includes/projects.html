@@ -1,6 +1,13 @@
 <h2>Projects</h2>
-<div class="project-container">
-  {% for project in site.projects %}
-    {% include project-card.html project=project %}
-  {% endfor %}
-</div> 
+{% assign domains = site.projects | map: "domain" | uniq %}
+{% for domain in domains %}
+  <div id="{{ domain }}" class="project-domain">
+    <h3>{{ domain | capitalize | replace: "-", " " }}</h3>
+    <div class="project-container">
+      {% assign domain_projects = site.projects | where: "domain", domain %}
+      {% for project in domain_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %} 

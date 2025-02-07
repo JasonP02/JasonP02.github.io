@@ -1,4 +1,4 @@
-<div class="project-card">
+<a href="{{ project.url | relative_url }}" class="project-card">
   <div class="project-image-container">
     <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
   </div>
@@ -7,6 +7,6 @@
       <h4>{{ project.title }}</h4>
       <div class="project-overview">{{ project.subtitle }}</div>
     </div>
-    <a href="{{ project.url | relative_url }}" class="see-more-btn">See More</a>
+    <div class="see-more-btn">See More</div>
   </div>
-</div>
+</a>

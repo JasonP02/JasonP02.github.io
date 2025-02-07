@@ -20,12 +20,12 @@
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2.5rem;
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 3rem;
+  padding: 2rem;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 2rem;
+  justify-content: center;
 }
 
 .project-card {
@@ -65,7 +65,7 @@
   }
 
   .project-info {
-    padding: 1.5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,7 +73,7 @@
   }
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--color-primary);
@@ -81,7 +81,7 @@
 
   .project-overview {
     color: var(--color-light-text);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -90,17 +90,17 @@
   }
 
   .see-more-btn {
-    display: inline-block;
-    padding: 0.8rem 1.2rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
     background: var(--color-accent);
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
-    font-size: 0.95rem;
-    font-weight: 500;
     transition: all var(--transition-speed);
-    text-align: center;
-    margin-top: 1.5rem;
     border: none;
     cursor: pointer;
 
