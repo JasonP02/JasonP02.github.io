@@ -1,0 +1,28 @@
+.nature-banner {
+  width: 100%;
+  height: 600px;
+  margin-top: 60px; /* Add this to account for nav height */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('/images/lush-field.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(
+      to bottom, 
+      transparent, 
+      var(--color-background)
+    );
+  }
+}
+
+/* Remove or comment out the .banner-content styles since we're not using text */ 
