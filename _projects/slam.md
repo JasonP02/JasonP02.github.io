@@ -14,7 +14,7 @@ github: "https://github.com/jasonp02/SLAM_MH01"
 Developed a complete SLAM (Simultaneous Localization and Mapping) system
 from the ground up in Python, moving beyond the standard ROS abstractions
 used in robotics competitions to gain deeper understanding of the underlying
-principles.
+principles. I might revisit this project if time permits, but there are other things I am interested in right now.
 
 ## Technical Details
 • Implementation of core SLAM algorithms
