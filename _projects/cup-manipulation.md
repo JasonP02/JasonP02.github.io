@@ -10,14 +10,13 @@ has_github: false
 ---
 
 ## Overview
-Two-semester research project focused on autonomous manipulation of water-filled cups using the LoCoBot platform. Sadly there was a fire in the lab, and I transitioned to a different project with deep learning.
+Two-semester research project at the [Intelligent Sensing](https://websites.umass.edu/xiandu/) Lab at UMass Amherst focused on autonomous manipulation of water-filled cups using the LoCoBot platform. Sadly there was a fire in the lab, and I transitioned to a different project with deep learning.
 
 ## Technical Details
 • Implemented ROS control systems
 • Developed computer vision pipeline
 • Created trajectory planning algorithms
-
-• Built liquid dynamics compensation
+• Liquid dynamics adjustment algorithm with PID
 
 <div class="tech-stack">
   <span class="tech-tag">ROS</span>
