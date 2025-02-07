@@ -34,4 +34,4 @@ Two-semester research project focused on autonomous manipulation of water-filled
 ## Challenges & Solutions
 The primary challenge was achieving reliable liquid handling without spills.
 This was addressed through careful trajectory planning and the development
-of specialized control algorithms that accounted for liquid dynamics. 
+of specialized control algorithms that accounted for liquid dynamics. In the end, there was not enough time to finish things.
