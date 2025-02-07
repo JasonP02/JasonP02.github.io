@@ -26,9 +26,9 @@ title: Blog
               {{ post.date | date: "%B %-d, %Y" }}
             </time>
           </div>
-          {% if post.excerpt %}
+          {% if post.description %}
             <div class="post-excerpt">
-              {{ post.excerpt }}
+              {{ post.description }}
             </div>
           {% endif %}
         </div>
