@@ -121,12 +121,13 @@ body::after {
 
 .nature-banner {
   width: 100%;
-  height: 80vh; /* Taller to show more of the waterfall */
+  height: 80vh;
   margin-top: 60px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-                    url('/images/lush-field.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('../images/lush-field.jpg');
   background-size: cover;
-  background-position: center 30%; /* Adjust to focus on the waterfall */
+  background-position: center 30%;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
 
