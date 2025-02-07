@@ -5,8 +5,6 @@
   padding-bottom: 2rem; // was 3rem
 }
 
-  
-
 .project-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -50,7 +48,6 @@
   position: relative;
 }
 
-
 .project-image {
   width: 100%;
   height: auto;
@@ -75,7 +72,11 @@
 .project-actions {
   display: flex;
   align-items: center;
+  justify-content: space-between; // positions back button on left and GitHub link on right
   margin-top: 3rem;
+  max-width: 800px;         // match text content width
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
@@ -112,8 +113,8 @@
   border-radius: 6px;
   transition: all var(--transition-speed);
   font-weight: 500;
-  margin-left: auto;
-  
+  // Removed margin-left: auto; spacing is handled by justify-content
+
   &:hover {
     background: var(--color-accent);
     color: white;
@@ -136,4 +137,4 @@
       margin-left: 0;
     }
   }
-} 
+}

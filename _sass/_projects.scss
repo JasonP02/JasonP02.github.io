@@ -11,7 +11,6 @@
   }
 }
 
-
 .project-domain {
   margin: var(--space-section) auto;
   max-width: var(--container-width);
@@ -42,7 +41,6 @@
     }
   }
 }
-
 
 .project-container {
   display: grid;
@@ -75,6 +73,7 @@
       .see-more-text {
         opacity: 1;
         height: auto;
+        line-height: 1.2; // restore normal line-height on hover
       }
     }
   }
@@ -114,13 +113,14 @@
     margin-top: 0.25rem;
     opacity: 0;
     height: 0;
+    line-height: 0; // ensures no extra spacing when hidden
     overflow: hidden;
     transition: all var(--transition-speed);
     color: rgba(255, 255, 255, 0.9);
   }
 }
 
-// Add responsive breakpoints
+// Responsive breakpoints
 @media (max-width: 1024px) {
   .project-container {
     grid-template-columns: repeat(2, 1fr);
