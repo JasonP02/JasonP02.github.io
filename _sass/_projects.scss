@@ -69,10 +69,9 @@
   &:hover {
     transform: translateY(-4px);
     
-    .project-info {
-      transform: translateY(-100%);
+    .see-more-overlay {
+      transform: translateY(0);
       opacity: 1;
-      visibility: visible;
     }
   }
 }
@@ -104,6 +103,22 @@
     font-weight: 500;
     margin: 0;
   }
+}
+
+.see-more-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all var(--transition-speed);
+  z-index: 3;
 }
 
 .project-info {

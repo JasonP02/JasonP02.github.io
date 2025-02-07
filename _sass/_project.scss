@@ -47,6 +47,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  position: relative;
 }
 
 
@@ -76,47 +77,51 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
-  padding: 0 1rem;
+  width: 100%;
+}
 
-  .back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    background: var(--color-accent);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all var(--transition-speed);
-    
-    &:hover {
-      background: var(--color-hover);
-    }
-
-    i {
-      font-size: 1.1rem;
-    }
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--color-accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all var(--transition-speed);
+  font-weight: 500;
+  
+  &:hover {
+    background: var(--color-hover);
   }
 
-  .github-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: var(--color-primary);
-    padding: 0.7rem 1.4rem;
-    border: 2px solid var(--color-accent);
-    border-radius: 6px;
-    transition: all var(--transition-speed);
-    
-    &:hover {
-      background: var(--color-accent);
-      color: white;
-    }
+  i {
+    font-size: 1.1rem;
+  }
+}
 
-    i {
-      font-size: 1.2rem;
-    }
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  background: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all var(--transition-speed);
+  font-weight: 500;
+  margin-left: auto;
+  
+  &:hover {
+    background: var(--color-accent);
+    color: white;
+  }
+
+  i {
+    font-size: 1.2rem;
   }
 }
 
@@ -124,7 +129,9 @@
   .project-actions {
     flex-direction: column;
     gap: 1rem;
-    align-items: stretch;
-    text-align: center;
+    
+    .github-link {
+      margin-left: 0;
+    }
   }
 } 
