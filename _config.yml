@@ -16,7 +16,7 @@ url: "https://jasonp02.github.io"
 
 markdown: kramdown
 
-theme: jekyll-theme-primer
+remote_theme: pages-themes/primer@v0.6.0
 
 sass:
 
@@ -47,6 +47,14 @@ plugins:
   - jekyll-default-layout
 
   - jekyll-titles-from-headings
+
+  - jekyll-coffeescript
+
+  - jekyll-commonmark-ghpages
+
+  - jekyll-gist
+
+  - jekyll-remote-theme
 
 
 
@@ -92,3 +100,4 @@ defaults:
 
 # GitHub Metadata settings
 repository: jasonp02/jasonp02.github.io
+github: [metadata]
