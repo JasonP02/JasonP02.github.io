@@ -1,0 +1,37 @@
+title: Jason Pett
+email: jasondpett@gmail.com
+description: Portfolio of robotics and software projects
+baseurl: ""
+url: "https://jasonp02.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Project data
+projects:
+  neural_networks:
+    title: "Neural Networks from Scratch"
+    date: "Sept 2023 - Nov 2023"
+    status: "completed"
+    
+  sparse_autoencoder:
+    title: "Sparse Autoencoder Investigations"
+    date: "Jan 2024 - Present"
+    status: "ongoing"
+    
+  corn_robot:
+    title: "Corn Monitoring Robot"
+    date: "Aug 2023 - Dec 2023"
+    status: "completed"
+    
+  cup_manipulation:
+    title: "Autonomous Cup Manipulation"
+    date: "Jan 2023 - Dec 2023"
+    status: "completed"
+    
+  slam:
+    title: "SLAM Implementation"
+    date: "Oct 2023 - Dec 2023"
+    status: "completed"

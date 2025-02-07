@@ -1,0 +1,31 @@
+.project-header {
+  padding-top: 5rem;
+  text-align: center;
+  background: var(--color-section-bg);
+  padding-bottom: 3rem;
+}
+
+// ... rest of your project styles ...
+
+.project-meta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project-status {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 12px;
+  
+  &.completed {
+    background-color: #10B981;
+    color: white;
+  }
+  
+  &.ongoing {
+    background-color: #F59E0B;
+    color: white;
+  }
+}
