@@ -94,8 +94,9 @@
   color: white;
   text-decoration: none;
   border-radius: 6px;
+  transition: all var(--transition-speed);
   
   &:hover {
-    background: darken(var(--color-accent), 10%);
+    opacity: 0.9;
   }
 } 
