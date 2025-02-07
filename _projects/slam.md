@@ -6,7 +6,8 @@ date: "Oct 2024 - Dec 2024"
 status: "completed"
 domain: robotics
 image: "images/SLAM.jpg"
-github: "https://github.com/jasonp02/slam](https://github.com/JasonP02/SLAM_MH01"
+has_github: true
+github: "https://github.com/JasonP02/SLAM_MH01"
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ date: "Jan 2022 - Dec 2022"
 status: "completed"
 domain: robotics
 image: "/assets/images/LoCoBot.jpg"
-github: "https://github.com/jasonp02/cup-manipulation"
+has_github: false
 ---
 
 ## Overview
@@ -16,6 +16,7 @@ Two-semester research project focused on autonomous manipulation of water-filled
 • Implemented ROS control systems
 • Developed computer vision pipeline
 • Created trajectory planning algorithms
+
 • Built liquid dynamics compensation
 
 <div class="tech-stack">

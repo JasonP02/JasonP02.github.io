@@ -6,7 +6,8 @@ date: "November 2024 - December 2024"
 status: "completed"
 domain: machine-learning
 image: "/assets/images/NeuralNetworks.jpg"
-github: "https://github.com/jasonp02/neural-networks"
+has_github: true
+github: "https://github.com/jasonp02/nn-from-scratch"
 ---
 
 ## Overview

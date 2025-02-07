@@ -6,8 +6,9 @@ date: "Aug 2023 - May 2024"
 status: "completed"
 domain: robotics
 image: "/assets/images/CMR_Photo.jpg"
-github: "https://github.com/jasonp02/corn-robot"
+has_github: false
 ---
+
 
 ## Overview
 Development of an autonomous robot for monitoring corn plants in a greenhouse. Used for research purposes by the Bartlett Lab at UMass Amherst

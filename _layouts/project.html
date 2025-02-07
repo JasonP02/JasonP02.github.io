@@ -10,7 +10,7 @@ layout: default
 <main class="main-content">
   <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
   
-  {% if page.github %}
+  {% if page.has_github %}
   <div class="github-container">
     <a href="{{ page.github }}" class="github-link">
       <i class="fab fa-github"></i>

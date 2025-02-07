@@ -6,7 +6,8 @@ date: "Jan 2024 - Present"
 status: "ongoing"
 domain: machine-learning
 image: "/assets/images/SAE.jpg"
-github: "https://github.com/jasonp02/sparse-autoencoder"
+has_github: true
+github: "https://github.com/jasonp02/sae-investigations"
 ---
 
 ## Overview
