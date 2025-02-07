@@ -76,18 +76,11 @@
 }
 
 .blog-post {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  display: grid;
-  // Three columns: left and right are empty space, middle (1fr) holds the text
-  grid-template-columns: 1fr minmax(auto, 600px) 1fr;
-  gap: 2rem;
-
   .post-header {
-    grid-column: 2; // Place header in the middle column
-    text-align: left;
-    margin-bottom: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+    background: var(--color-section-bg);
+    padding-bottom: 2rem;
 
     h1 {
       font-size: 2.8rem;
@@ -104,8 +97,9 @@
   }
 
   .post-content {
-    grid-column: 2; // Place content in the middle column
-    text-align: left;
+    max-width: 900px; // Slightly wider than project pages
+    margin: 0 auto;
+    padding: 2rem 1rem;
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--color-primary);
@@ -149,6 +143,45 @@
   }
 }
 
+.blog-navigation {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  grid-column: 2;
+
+  .back-button,
+  .home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all var(--transition-speed);
+    font-weight: 500;
+  }
+
+  .back-button {
+    background: var(--color-accent);
+    color: white;
+    
+    &:hover {
+      background: var(--color-hover);
+    }
+  }
+
+  .home-button {
+    background: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    
+    &:hover {
+      background: var(--color-accent);
+      color: white;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .blog-post {
     grid-template-columns: 1fr minmax(auto, 600px) 1fr;
@@ -169,5 +202,11 @@
   
   .blog-posts {
     grid-template-columns: 1fr;
+  }
+
+  .blog-navigation {
+    grid-column: 1;
+    padding: 0 1rem;
+    flex-direction: column;
   }
 } 

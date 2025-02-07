@@ -74,11 +74,9 @@
 
 .project-actions {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
   width: 100%;
-  flex-direction: row-reverse;
 }
 
 .back-button {
@@ -92,7 +90,6 @@
   border-radius: 6px;
   transition: all var(--transition-speed);
   font-weight: 500;
-  order: 2;
   
   &:hover {
     background: var(--color-hover);
@@ -115,7 +112,7 @@
   border-radius: 6px;
   transition: all var(--transition-speed);
   font-weight: 500;
-  order: 1;
+  margin-left: auto;
   
   &:hover {
     background: var(--color-accent);
@@ -127,7 +124,6 @@
   }
 }
 
-
 @media (max-width: 640px) {
   .project-actions {
     flex-direction: column;
@@ -137,14 +133,7 @@
     .github-link {
       width: 100%;
       justify-content: center;
-    }
-    
-    .back-button {
-      order: 1;
-    }
-    
-    .github-link {
-      order: 2;
+      margin-left: 0;
     }
   }
 } 
