@@ -11,13 +11,16 @@ layout: default
   <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
   {{ content }}
   
-  {% if page.github %}
-  <a href="{{ page.github }}" class="github-link">
-    <i class="fab fa-github"></i>
-    View on GitHub
-  </a>
-  {% endif %}
+  <div class="project-actions">
+    {% if page.github %}
+    <a href="{{ page.github }}" class="github-link">
+      <i class="fab fa-github"></i>
+      View on GitHub
+    </a>
+    {% endif %}
 
-  <a href="{{ '/#projects' | relative_url }}" class="back-button">
-  <i class="fas fa-arrow-left"></i> Back to Projects
-</a>
+    <a href="{{ '/#projects' | relative_url }}" class="back-button">
+      <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+  </div>
+</main>

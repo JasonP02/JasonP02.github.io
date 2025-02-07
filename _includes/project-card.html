@@ -2,9 +2,11 @@
   <div class="project-image-container">
     <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
   </div>
+  <div class="project-hover-bar">
+    Click to see more
+  </div>
   <div class="project-title-bar">
     <h4>{{ project.title }}</h4>
-    <span class="see-more-hint">click to see more</span>
   </div>
   <div class="project-info">
     <div class="project-overview">{{ project.subtitle }}</div>
