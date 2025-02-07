@@ -1,18 +1,23 @@
-title: Jason Pett
-email: jasondpett@gmail.com
-description: Portfolio of robotics and software projects
-baseurl: ""
-url: "https://jasonp02.github.io"
+# Site settings
+title: Jason's Portfolio
+description: Personal portfolio showcasing projects in machine learning, robotics, and software engineering
+email: your.email@example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jasonp02.github.io" # the base hostname & protocol
 
+# Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sass-converter
 
+# Collections
 collections:
   projects:
     output: true
     permalink: /projects/:path/
 
+# Defaults
 defaults:
   - scope:
       path: ""
