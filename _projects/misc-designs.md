@@ -10,18 +10,18 @@ has_github: false
 ---
 
 ## Overview
-A collection of various design projects completed during my academic career, showcasing different aspects of mechanical design and engineering principles.
+A collection of various design projects completed during my academic career. These are all small projects that I estimate I could complete within a couple of hours. I figured why not throw them on here.
 
 ## Projects
 
 ### Dresser Design
-Custom furniture design project focusing on practical storage solutions and aesthetic appeal. The project emphasized material selection, joint design, and manufacturing considerations.
+A dresser in my house. It is dimensionally accurate except for the fillets.
 
 ### Bridge Analysis
-Structural analysis and design optimization project. Focused on load distribution, material efficiency, and structural integrity calculations.
+From Sophmore year in college. This was for my Statics class, and I would make something a lot nicer now!
 
 ### Phone Holder
-Custom-designed phone mounting solution. The project involved ergonomic considerations, material selection, and practical usability testing.
+We had to design and fabricate a phone holder. Useful introduction to 'thinking about manufacturability' for parts you make!
 
 <div class="image-gallery">
   <img src="{{ '/assets/images/dresser.png' | relative_url }}" alt="Dresser Design">
