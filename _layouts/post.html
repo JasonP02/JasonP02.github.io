@@ -12,13 +12,18 @@ layout: default
   </header>
 
   <div class="post-content">
-    {% assign content_lines = content | split: "
+    {% assign lines = content | split: "
 " %}
-    {% assign first_line = content_lines | first %}
-    {% if first_line contains "## " %}
-      {% assign content_lines = content_lines | slice: 1, content_lines.size %}
-    {% endif %}
-    {{ content_lines | join: "
+    {% assign filtered_lines = "" | split: "" %}
+    {% assign first_header_found = false %}
+    {% for line in lines %}
+      {% if line contains "# " and first_header_found == false %}
+        {% assign first_header_found = true %}
+      {% else %}
+        {% assign filtered_lines = filtered_lines | push: line %}
+      {% endif %}
+    {% endfor %}
+    {{ filtered_lines | join: "
 " }}
   </div>
 
