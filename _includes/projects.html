@@ -1,4 +1,6 @@
-<h2>Projects</h2>
+<div class="section-header">
+  <h2>Projects</h2>
+</div>
 {% assign domains = site.projects | map: "domain" | uniq %}
 {% for domain in domains %}
   <div id="{{ domain }}" class="project-domain">

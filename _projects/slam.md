@@ -5,7 +5,7 @@ subtitle: "Simultaneous Localization and Mapping"
 date: "Oct 2023 - Dec 2023"
 status: "completed"
 domain: robotics
-image: "/images/slam.jpg"
+image: "/images/slam.png"
 github: "https://github.com/jasonp02/slam"
 ---
 
