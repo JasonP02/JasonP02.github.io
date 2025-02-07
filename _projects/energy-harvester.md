@@ -44,13 +44,3 @@ The bifurcation study was the most challenging part of the project. I had to imp
 
 ## Challenges & Solutions
 The main challenge was accurately reproducing the complex dynamics described in the original research paper. This was addressed through careful implementation of numerical methods and validation against published results.
-
-{% if page.has_report %}
-<div class="report-container">
-  <a href="{{ page.report | relative_url }}" class="report-link" target="_blank" 
-     onclick="if(this.href.endsWith('.pdf') && !this.href.startsWith('http')) { alert('PDF file not found. Please check back later.'); return false; }">
-    <i class="fas fa-file-pdf"></i>
-    View Full Report
-  </a>
-</div>
-{% endif %}
