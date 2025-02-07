@@ -5,7 +5,7 @@ subtitle: "Autonomous agricultural monitoring system"
 date: "Aug 2023 - May 2024"
 status: "completed"
 domain: robotics
-image: "/assets/images/corn-robot-plant.jpg"
+image: "/assets/images/corn-robot-photo.jpg"
 has_github: false
 ---
 
@@ -28,7 +28,7 @@ The rotating base was implemented to capture multiple angles of plant data. Rath
 <div class="image-gallery">
   <img src="{{ '/assets/images/corn-robot-coupler.png' | relative_url }}" alt="Coupler Mechanism">
   <img src="{{ '/assets/images/corn-robot-rotating-base.png' | relative_url }}" alt="Rotating Base">
-  <img src="{{ '/assets/images/corn-robot-photo.jpg' | relative_url }}" alt="Corn Monitoring Robot">
+  <img src="{{ '/assets/images/corn-robot-plant.jpg' | relative_url }}" alt="Corn Plant">
   <img src="{{ '/assets/images/corn-robot-drawing.png' | relative_url }}" alt="Corn Monitoring Robot Drawing">
 </div>
 <div class="tech-stack">
