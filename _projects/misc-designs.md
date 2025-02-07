@@ -2,7 +2,7 @@
 layout: project
 title: "Miscellaneous Design Projects"
 subtitle: "Collection of various mechanical design projects"
-date: "2020 - 2023"
+date: "2023-12-31"
 status: "completed"
 domain: design
 image: "/assets/images/dresser.png"
