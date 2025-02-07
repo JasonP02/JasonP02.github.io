@@ -16,6 +16,8 @@ url: "https://jasonp02.github.io"
 
 markdown: kramdown
 
+theme: jekyll-theme-primer
+
 sass:
 
   style: compressed
@@ -29,6 +31,22 @@ plugins:
   - jekyll-feed
 
   - jekyll-sass-converter
+
+  - jekyll-seo-tag
+
+  - jekyll-github-metadata
+
+  - jekyll-paginate
+
+  - jekyll-relative-links
+
+  - jekyll-optional-front-matter
+
+  - jekyll-readme-index
+
+  - jekyll-default-layout
+
+  - jekyll-titles-from-headings
 
 
 
@@ -69,3 +87,8 @@ defaults:
     values:
 
       layout: "post"
+
+
+
+# GitHub Metadata settings
+repository: jasonp02/jasonp02.github.io
