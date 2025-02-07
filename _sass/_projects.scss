@@ -20,14 +20,12 @@
 
 .project-container {
   display: grid;
-  /* 
-    Lowered the min-width a bit so the cards
-    can shrink nicely while maintaining a square shape.
-  */
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 2rem;
-  padding: 1rem 0;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 2rem 0;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .project-card {
@@ -67,7 +65,7 @@
   }
 
   .project-info {
-    padding: 1.25rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,20 +91,26 @@
 
   .see-more-btn {
     display: inline-block;
-    padding: 0.6rem 1rem;
+    padding: 0.8rem 1.2rem;
     background: var(--color-accent);
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    font-size: 0.9rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
     font-weight: 500;
     transition: all var(--transition-speed);
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
 
     &:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(94, 90, 219, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
     }
   }
 }
