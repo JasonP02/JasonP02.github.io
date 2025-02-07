@@ -68,16 +68,15 @@
 
   &:hover {
     transform: translateY(-4px);
-  }
-  
-  // On hover, move the title bar upward to reveal the see-more text
-  &:hover .project-title-bar {
-    transform: translateY(-10px);
-  }
-  
-  &:hover .project-title-bar .see-more-text {
-    opacity: 1;
-    transform: translateY(0);
+    
+    .project-title-bar {
+      padding-bottom: 2.5rem;
+      
+      .see-more-text {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 }
 
@@ -102,7 +101,7 @@
   background: rgba(0, 0, 0, 0.7);
   color: white;
   z-index: 2;
-  overflow: hidden; // hide extra content until slide
+  overflow: hidden;
   transition: transform var(--transition-speed);
 
   h4 {
@@ -112,12 +111,15 @@
   }
 
   .see-more-text {
-    opacity: 0;
-    transform: translateY(10px);
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
     font-size: 0.9rem;
     font-style: italic;
-    margin-top: 0.5rem;
-    transition: opacity var(--transition-speed), transform var(--transition-speed);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all var(--transition-speed);
+    pointer-events: none;
   }
 }
 

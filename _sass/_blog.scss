@@ -80,13 +80,13 @@
   margin: 0 auto;
   padding: 4rem 2rem;
   display: grid;
-  // Two columns: left (2fr) is empty space, right (1fr) holds the text (≈ 1/3 of width)
-  grid-template-columns: 2fr 1fr;
+  // Three columns: left and right are empty space, middle (1fr) holds the text
+  grid-template-columns: 1fr minmax(auto, 600px) 1fr;
   gap: 2rem;
 
   .post-header {
-    grid-column: 2; // Place header in the text column
-    text-align: left; // Left-align the header text
+    grid-column: 2; // Place header in the middle column
+    text-align: left;
     margin-bottom: 3rem;
 
     h1 {
@@ -104,8 +104,8 @@
   }
 
   .post-content {
-    grid-column: 2; // Place content in the text column
-    text-align: left; // Ensure paragraphs are left aligned
+    grid-column: 2; // Place content in the middle column
+    text-align: left;
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--color-primary);
@@ -151,7 +151,7 @@
 
 @media (max-width: 1024px) {
   .blog-post {
-    grid-template-columns: 1fr 2fr 1fr; // Adjust ratio for medium screens
+    grid-template-columns: 1fr minmax(auto, 600px) 1fr;
   }
 }
 
