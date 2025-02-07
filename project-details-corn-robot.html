@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corn Monitoring Robot - Project Details</title>
+  
+  <!-- Using the same font and styles from main page -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* Copy the root variables and global styles from main page */
+    :root {
+      --color-background: #fdfdfc;
+      --color-primary: #0a0a0a;
+      --color-accent: #206FFF;
+      --color-nav-bg: #ffffff;
+      --color-section-bg: #fafaf8;
+      --color-card-bg: #ffffff;
+      --color-light-text: #6b7280;
+      --transition-speed: 0.3s;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", 
+                   Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-primary);
+      line-height: 1.6;
+    }
+
+    /* Navigation styles from main page */
+    nav {
+      width: 100%;
+      background-color: var(--color-nav-bg);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      gap: 2rem;
+      padding: 1rem 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--color-primary);
+      transition: color var(--transition-speed);
+    }
+
+    nav a:hover {
+      color: var(--color-accent);
+    }
+
+    /* Project Detail Specific Styles */
+    .project-header {
+      padding-top: 5rem;
+      text-align: center;
+      background: var(--color-section-bg);
+      padding-bottom: 3rem;
+    }
+
+    .project-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-subtitle {
+      color: var(--color-light-text);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .main-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .project-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+      border-left: 4px solid var(--color-accent);
+      padding-left: 1rem;
+    }
+
+    .section-content {
+      color: var(--color-light-text);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .tech-stack {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .tech-tag {
+      background: var(--color-section-bg);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--color-accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background var(--transition-speed);
+    }
+
+    .back-button:hover {
+      background: #0054c7;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#interests">Domains</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <header class="project-header">
+    <h1 class="project-title">Corn Monitoring Robot</h1>
+    <p class="project-subtitle">Autonomous agricultural robot for corn field monitoring</p>
+  </header>
+
+  <main class="main-content">
+    <img src="images/CMR_Photo.jpg" alt="Corn Monitoring Robot" class="project-image">
+
+    <div class="section">
+      <h2 class="section-title">Overview</h2>
+      <p class="section-content">
+        Senior capstone project focused on developing an autonomous robot capable of
+        navigating through corn fields while collecting vital crop data. The robot
+        combines hardware design with sophisticated software implementation.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Technical Details</h2>
+      <p class="section-content">
+        • Full software stack implementation using ESP32 and Raspberry Pi<br>
+        • Custom PCB design and integration<br>
+        • Sensor fusion for navigation<br>
+        • Real-time data collection and processing<br>
+        • Mechanical design and prototyping
+      </p>
+      <div class="tech-stack">
+        <span class="tech-tag">ESP32</span>
+        <span class="tech-tag">Raspberry Pi</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">CAD</span>
+        <span class="tech-tag">PCB Design</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Key Learnings</h2>
+      <p class="section-content">
+        • Importance of rapid prototyping in robotics development<br>
+        • Integration of multiple subsystems<br>
+        • Hardware-software interface design<br>
+        • Project management and team coordination
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Challenges & Solutions</h2>
+      <p class="section-content">
+        The biggest challenge was ensuring reliable navigation in unstructured agricultural
+        environments. This was solved through iterative testing and refinement of both
+        hardware and software components, leading to a robust final design.
+      </p>
+    </div>
+
+    <a href="index.html#projects" class="back-button">← Back to Projects</a>
+  </main>
+</body>
+</html>
