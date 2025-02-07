@@ -4,14 +4,11 @@
     <li class="dropdown">
       <a href="{{ '/#projects' | relative_url }}">Projects</a>
       <div class="dropdown-content">
-        {% assign domains = site.projects | map: "domain" | uniq %}
-        {% for domain in domains %}
-          <a href="{{ '/#' | append: domain | relative_url }}">
-            {{ domain | capitalize | replace: "-", " " }}
-          </a>
+        {% for domain in site.data.domains %}
+          <a href="{{ '/#' | append: domain.id | relative_url }}">{{ domain.name }}</a>
         {% endfor %}
       </div>
     </li>
-    <li><a href="mailto:{{ site.email }}">Contact</a></li>
+    <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
   </ul>
 </nav>
