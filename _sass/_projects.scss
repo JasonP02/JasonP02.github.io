@@ -70,7 +70,7 @@
     transform: translateY(-4px);
     
     .project-info {
-      transform: translateY(0);
+      transform: translateY(-100%);
     }
   }
 }
@@ -94,6 +94,7 @@
   padding: 1rem;
   background: rgba(0, 0, 0, 0.7);
   color: white;
+  z-index: 1;
   
   h4 {
     font-size: 1.25rem;
@@ -104,17 +105,18 @@
 
 .project-info {
   position: absolute;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   right: 0;
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.85);
   color: white;
-  transform: translateY(100%);
+  transform: translateY(0);
   transition: transform var(--transition-speed);
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  height: 100%;
 
   .project-overview {
     font-size: 0.95rem;
@@ -124,6 +126,7 @@
 }
 
 .see-more-btn {
+  margin-top: auto;
   align-self: flex-start;
   padding: 0.6rem 1.2rem;
   background: var(--color-accent);
