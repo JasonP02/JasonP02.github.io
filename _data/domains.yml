@@ -5,3 +5,11 @@
 - id: robotics
   name: Robotics
   description: Autonomous systems and robotic control 
+
+- id: design
+  name: Mechanical Design
+  description: CAD, analysis, and mechanical systems
+
+- id: other
+  name: Other Projects
+  description: Miscellaneous technical projects 

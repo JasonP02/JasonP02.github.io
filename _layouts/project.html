@@ -19,6 +19,15 @@ layout: default
   </div>
   {% endif %}
 
+  {% if page.has_report %}
+  <div class="report-container">
+    <a href="{{ page.report | relative_url }}" class="report-link" target="_blank">
+      <i class="fas fa-file-pdf"></i>
+      View Full Report
+    </a>
+  </div>
+  {% endif %}
+
   {{ content }}
   
   <div class="project-actions">
