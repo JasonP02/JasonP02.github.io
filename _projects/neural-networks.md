@@ -5,7 +5,7 @@ subtitle: "Building deep learning architectures using only NumPy"
 date: "November 2024 - December 2024"
 status: "completed"
 domain: machine-learning
-image: "/images/NeuralNetworks.jpg"
+image: "/assets/images/NeuralNetworks.jpg"
 github: "https://github.com/jasonp02/neural-networks"
 ---
 

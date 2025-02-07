@@ -20,7 +20,7 @@ body {
   background-color: var(--color-background);
   background-image: 
     linear-gradient(rgba(243, 248, 242, 0.97), rgba(243, 248, 242, 0.97)),
-    url('/images/leaves-pattern.png');
+    url('/assets/images/leaves-pattern.png');
   background-repeat: repeat;
   background-size: 300px;
   color: var(--color-primary);
@@ -47,20 +47,20 @@ body::after {
 
 body::before {
   left: 0;
-  background-image: url('/images/left-vine.png');
+  background-image: url('/assets/images/left-vine.png');
   transform: scaleX(-1);
 }
 
 body::after {
   right: 0;
-  background-image: url('/images/right-vine.png');
+  background-image: url('/assets/images/right-vine.png');
 }
 
 // Zen banner styles
 .zen-banner {
   width: 100%;
   height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/zen-banner.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/zen-banner.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -113,7 +113,7 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/images/paper-texture.png');
+    background-image: url('/assetspaper-texture.png');
     opacity: 0.03;
     pointer-events: none;
   }
@@ -121,27 +121,9 @@ body::after {
 
 .nature-banner {
   width: 100%;
-  height: 600px;
+  height: 500px;
   margin-top: 60px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-                    url('{{ "/images/lush-field.jpg" | relative_url }}');
+  background-image: url('/assets/images/lush-field.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  position: relative;
-  overflow: hidden;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background: linear-gradient(
-      to bottom, 
-      transparent, 
-      var(--color-background)
-    );
-  }
 }

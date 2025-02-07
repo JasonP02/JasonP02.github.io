@@ -5,7 +5,7 @@ subtitle: "Exploring neural network interpretability"
 date: "Jan 2024 - Present"
 status: "ongoing"
 domain: machine-learning
-image: "/images/SAE.jpg"
+image: "/assets/images/SAE.jpg"
 github: "https://github.com/jasonp02/sparse-autoencoder"
 ---
 

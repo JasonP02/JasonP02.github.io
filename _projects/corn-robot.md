@@ -5,7 +5,7 @@ subtitle: "Autonomous agricultural monitoring system"
 date: "Aug 2023 - May 2024"
 status: "completed"
 domain: robotics
-image: "/images/CMR_Photo.jpg"
+image: "/assets/images/CMR_Photo.jpg"
 github: "https://github.com/jasonp02/corn-robot"
 ---
 

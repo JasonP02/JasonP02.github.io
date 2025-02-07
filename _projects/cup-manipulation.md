@@ -5,7 +5,7 @@ subtitle: "Research project using LoCoBot for precise liquid handling"
 date: "Jan 2022 - Dec 2022"
 status: "completed"
 domain: robotics
-image: "/images/LoCoBot.jpg"
+image: "/assets/images/LoCoBot.jpg"
 github: "https://github.com/jasonp02/cup-manipulation"
 ---
 
