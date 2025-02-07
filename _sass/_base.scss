@@ -1,12 +1,14 @@
 :root {
-  --color-background: #fdfdfc;
-  --color-primary: #0a0a0a;
-  --color-accent: #206FFF;
-  --color-nav-bg: #ffffff;
-  --color-section-bg: #fafaf8;
+  --color-background: #ffffff;
+  --color-primary: #141414;
+  --color-accent: #5E5ADB;
+  --color-nav-bg: rgba(255, 255, 255, 0.98);
+  --color-section-bg: #f9f9f9;
   --color-card-bg: #ffffff;
-  --color-light-text: #6b7280;
-  --transition-speed: 0.3s;
+  --color-light-text: #595959;
+  --color-border: #eaeaea;
+  --transition-speed: 0.2s;
+  --container-width: 1200px;
 }
 
 * {
