@@ -46,32 +46,21 @@
 
 .project-container {
   display: grid;
-  // Force exactly 3 columns of equal width
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Adjust minmax() as needed
   gap: 1.5rem;
   padding: 1rem;
   max-width: var(--container-width);
   margin: 0 auto;
-
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 }
 
-.project-card {
-  height: 100%;  // Ensure consistent height
   
-  .project-info {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;  // Take up remaining space
-  }
+.project-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;  // Take up remaining space
+}
 
   .see-more-btn {
     margin-top: auto;  // Push to bottom

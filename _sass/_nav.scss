@@ -1,12 +1,13 @@
 nav {
   width: 100%;
   background-color: var(--color-nav-bg);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-border);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
 
   ul {
     max-width: var(--container-width);
@@ -65,6 +66,10 @@ nav {
   }
 
   .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; // Adjust the gap value to your liking
+  
     position: absolute;
     top: 100%;
     left: 50%;
@@ -79,17 +84,8 @@ nav {
     border: 1px solid var(--color-border);
     padding: 0.5rem 0;
     transition: all 0.25s ease-out;
-    z-index: 9999;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: -16px;
-      left: 0;
-      right: 0;
-      height: 16px;
-    }
-
+    z-index: 101;
+  
     a {
       padding: 0.75rem 1.5rem;
       white-space: nowrap;
@@ -98,5 +94,13 @@ nav {
         background: var(--color-section-bg);
       }
     }
+
+    &:focus-within {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
   }
+  
 }
