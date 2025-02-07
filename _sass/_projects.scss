@@ -106,18 +106,21 @@
     font-weight: 500;
     margin: 0;
   }
+}
 
-  .see-more-hint {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    font-style: italic;
-    font-size: 0.85rem;
-    opacity: 0;
-    color: rgba(255, 255, 255, 0.9);
-    transition: opacity var(--transition-speed);
-  }
+.see-more-hint {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-style: italic;
+  font-size: 0.85rem;
+  opacity: 0;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: opacity var(--transition-speed);
+  z-index: 3;
 }
 
 .project-info {

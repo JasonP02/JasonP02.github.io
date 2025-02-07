@@ -12,7 +12,14 @@ layout: default
   </header>
 
   <div class="post-content">
-    {{ content }}
+    {% assign content_lines = content | split: "
+" %}
+    {% assign first_line = content_lines | first %}
+    {% if first_line contains "## " %}
+      {% assign content_lines = content_lines | slice: 1, content_lines.size %}
+    {% endif %}
+    {{ content_lines | join: "
+" }}
   </div>
 
   <a href="{{ '/blog' | relative_url }}" class="back-button">
