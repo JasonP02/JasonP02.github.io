@@ -61,7 +61,7 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-speed);
+  transition: all var(--transition-speed);
   text-decoration: none;
   color: inherit;
   height: 280px;
@@ -70,10 +70,7 @@
     transform: translateY(-4px);
     
     .project-title-bar {
-      .see-more-text {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      transform: translateY(-25%);
     }
   }
 }
@@ -95,27 +92,31 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.75rem;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   z-index: 2;
-  transition: all var(--transition-speed);
+  transition: transform var(--transition-speed) ease;
+  transform: translateY(0);
 
   h4 {
-    font-size: 1.1rem;
+    font-size: 1.65rem;
     font-weight: 500;
     margin: 0;
-    margin-bottom: 0.25rem;
   }
 
   .see-more-text {
-    font-size: 0.9rem;
-    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
     opacity: 0;
-    transform: translateY(20px);
-    transition: all var(--transition-speed);
+    transition: opacity var(--transition-speed);
+    color: rgba(255, 255, 255, 0.9);
+    display: none;
+  }
+
+  &:hover .see-more-text {
+    opacity: 1;
     display: block;
-    color: rgba(255, 255, 255, 0.8);
   }
 }
 

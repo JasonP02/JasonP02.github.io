@@ -106,9 +106,9 @@
   }
 
   .post-content {
-    max-width: 800px; // Match project page width
+    max-width: 33%;
     margin: 0 auto;
-    padding: 2rem 2rem; // Increased horizontal padding
+    padding: 2rem 0;
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--color-primary);
@@ -201,13 +201,16 @@
 
 @media (max-width: 1024px) {
   .blog-post {
-    grid-template-columns: 1fr minmax(auto, 600px) 1fr;
+    .post-content {
+      max-width: 80%;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .blog-post {
     .post-content {
+      max-width: 90%;
       padding: 2rem 1rem;
     }
   }
