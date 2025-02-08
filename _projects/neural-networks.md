@@ -2,7 +2,7 @@
 layout: project
 title: "Neural Networks from Scratch"
 subtitle: "Building deep learning architectures using only NumPy"
-date: "November 2024 - December 2024"
+project_date : "November 2024 - December 2024"
 status: "completed"
 domain: machine-learning
 image: "/assets/images/NeuralNetworks.jpg"

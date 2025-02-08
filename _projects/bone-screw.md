@@ -2,7 +2,7 @@
 layout: project
 title: "Pediatric Bone Screw Analysis"
 subtitle: "Design modification and FEA analysis"
-date: "March 2023 - April 2023"
+project_date : "March 2023 - April 2023"
 status: "completed"
 domain: design
 image: "/assets/images/bone-screw-render.png"

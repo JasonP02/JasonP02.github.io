@@ -2,7 +2,7 @@
 layout: project
 title: "Nonlinear Energy Harvester Analysis"
 subtitle: "Magnetic suspension system dynamics study"
-date: "November 2024 - December 2024"
+project_date : "November 2024 - December 2024"
 status: "completed"
 domain: other
 image: "/assets/images/energy-harvester.png"

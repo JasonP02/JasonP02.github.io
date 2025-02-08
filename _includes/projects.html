@@ -6,7 +6,7 @@
     <h3>{{ domain.name }}</h3>
     <div class="project-container">
       {% assign domain_projects = site.projects | where: "domain", domain.id %}
-      {% assign sorted_projects = domain_projects | sort: "date" | reverse %}
+      {% assign sorted_projects = domain_projects | sort: "project_date" | reverse %}
       {% for project in sorted_projects %}
         {% include project-card.html project=project %}
       {% endfor %}

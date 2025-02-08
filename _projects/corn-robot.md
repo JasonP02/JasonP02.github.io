@@ -2,7 +2,7 @@
 layout: project
 title: "Corn Monitoring Robot"
 subtitle: "Autonomous agricultural monitoring system"
-date: "August 2023 - May 2024"
+project_date : "August 2023 - May 2024"
 status: "completed"
 domain: robotics
 image: "/assets/images/corn-robot-photo.jpg"
