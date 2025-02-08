@@ -1,5 +1,4 @@
 <div class="project-meta">
-  {% assign date_parts = include.date | split: " " %}
-  <span class="project-date">{{ date_parts[0] }}</span>
+  <span class="project-date">{{ include.date }}</span>
   <span class="project-status {{ include.status }}">{{ include.status }}</span>
 </div>
