@@ -5,7 +5,7 @@ subtitle: "Robotic arm trajectory control under external forces"
 project_date: "October 2024 - December 2024"
 status: "completed"
 domain: robotics
-image: "/assets/images/adaptive_control.jpg"
+image: "/assets/images/adaptive-arm.jpg"
 has_github: true
 github: "https://github.com/jasonp02/adaptive-control"
 has_report: true
@@ -27,10 +27,15 @@ Implementation of adaptive control strategies for the Emika Panda robotic arm, f
 • Performance analysis under varying conditions.
 
 
-I did this project with my friend, and I was responsible for the adaptive control and simulation.
+I did this project with my friend, and I was responsible for the adaptive control and simulation. In the end, the adaptive controller was able to maintain the circular trajectory under the wind disturbance and unconstrained mass handling with much better performance than the Ziegler-Nichols method.
+
+<div class="image-container">
+  <img src="/assets/images/adaptive-control.jpg" alt="Adaptive Control Results">
+</div>
 
 <div class="tech-stack">
   <span class="tech-tag">Python</span>
+
   <span class="tech-tag">Control Systems</span>
   <span class="tech-tag">Robotics</span>
   <span class="tech-tag">Simulation</span>
