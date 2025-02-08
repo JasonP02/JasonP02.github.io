@@ -7,7 +7,8 @@ status: "completed"
 domain: other
 image: "/assets/images/HMI.png"
 has_github: false
-has_video: false
+has_report: true
+report: "/assets/pdfs/hmi_report.pdf"
 ---
 
 ## Overview
