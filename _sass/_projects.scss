@@ -92,7 +92,7 @@
   color: white;
   backdrop-filter: blur(4px);
   z-index: 2;
-  padding: 0.4rem 0.75rem;
+  padding: 0.8rem 1rem;  // Much larger padding
 }
 
 .project-hover-bar {
@@ -136,10 +136,10 @@
   gap: 0.3rem;
   
   h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;  // Slightly larger font
     font-weight: 500;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.4;
   }
 }
 

@@ -40,6 +40,11 @@
   margin-top: 1rem;
 }
 
+.project-date {
+  font-size: 1.1rem;  // Added explicit size
+  color: var(--color-light-text);
+}
+
 .project-status {
   font-size: 0.9rem;
   padding: 0.2rem 0.8rem;
