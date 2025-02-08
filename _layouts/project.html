@@ -4,7 +4,8 @@ layout: default
 <header class="project-header">
   <h1 class="project-title">{{ page.title }}</h1>
   <p class="project-subtitle">{{ page.subtitle }}</p>
-  {% include project-meta.html date=page.date status=page.status %}
+  {% assign raw_date = page.date | strip | strip_quotes %}
+  {% include project-meta.html date=raw_date status=page.status %}
 </header>
 
 <main class="main-content">
