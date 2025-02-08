@@ -88,16 +88,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   background: rgba(46, 89, 39, 0.85);
   color: white;
   backdrop-filter: blur(4px);
   z-index: 2;
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin: 0;
+    line-height: 1.2;
   }
 }
 
@@ -137,9 +138,9 @@
 }
 
 .project-year {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   opacity: 0.9;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
 }
 
 .project-status {
@@ -159,24 +160,28 @@
 }
 
 .status-dot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   
   &.completed {
     background-color: #10B981;
+    box-shadow: 0 0 4px rgba(16, 185, 129, 0.6);
   }
   
   &.ongoing {
     background-color: #F59E0B;
+    box-shadow: 0 0 4px rgba(245, 158, 11, 0.6);
   }
 }
 
 .title-status-wrapper {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 // Responsive breakpoints
