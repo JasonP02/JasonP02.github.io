@@ -7,7 +7,10 @@ status: "completed"
 domain: machine-learning
 image: "/assets/images/Drill.png"
 has_github: false
+has_presentation: true
+presentation: "/assets/pdfs/Drill.pptx"
 ---
+
 
 ## Overview
 Development of machine learning models to classify drill bit conditions based on vibrational data. The project involved implementing and comparing various classification methods, ultimately achieving superior results using deep learning approaches.
@@ -34,3 +37,12 @@ Development of machine learning models to classify drill bit conditions based on
 
 ## Challenges & Solutions
 The main challenge was surpassing the performance metrics of the original paper. This was achieved through careful implementation of deep learning techniques, including dropout layers and proper normalization strategies, ultimately resulting in improved classification accuracy.
+
+{% if page.has_presentation %}
+<div class="presentation-container">
+  <a href="{{ page.presentation | relative_url }}" class="presentation-link" target="_blank">
+    <i class="fas fa-file-powerpoint"></i>
+    View Presentation
+  </a>
+</div>
+{% endif %}

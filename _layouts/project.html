@@ -19,6 +19,15 @@ layout: default
   </div>
   {% endif %}
 
+  {% if page.has_presentation %}
+  <div class="presentation-container">
+    <a href="{{ page.presentation | relative_url }}" class="presentation-link" target="_blank">
+      <i class="fas fa-file-powerpoint"></i>
+      Presentation
+    </a>
+  </div>
+  {% endif %}
+
   {% if page.has_report %}
   <div class="report-container">
     <a href="{{ page.report | relative_url }}" class="report-link" target="_blank">
