@@ -13,21 +13,23 @@ report: "/assets/pdfs/adaptive_control_report.pdf"
 ---
 
 ## Overview
-Implementation of adaptive control strategies for the Emika Panda robotic arm, focusing on maintaining circular trajectory under various external forces including wind disturbance and unconstrained mass handling.
+This was a project for [CS690K](https://sites.google.com/view/adv-robot-dyn-ctrl) where our group evaluated different control methods for a robotic arm. We used the mujoco python library, and found that adaptive control performed best. See the report for more technical details.
 
 ## Technical Details
+• Mujoco python library implementation.
+
 • Circular trajectory implementation.
 
 • Wind force disturbance simulation.
 
 • Adaptive controller development.
 
-• Comparison with Ziegler-Nichols method.
+• Comparison with Ziegler-Nichols PID tuning method.
 
 • Performance analysis under varying conditions.
 
 
-I did this project with my friend, and I was responsible for the adaptive control and simulation. In the end, the adaptive controller was able to maintain the circular trajectory under the wind disturbance and unconstrained mass handling with much better performance than the Ziegler-Nichols method.
+I was responsible for the adaptive control and simulation implementation of the arm. In the end, the adaptive controller was able to maintain the circular trajectory under the wind disturbance and unconstrained mass handling with much better performance than the Ziegler-Nichols method.
 
 <div class="image-container">
   <img src="/assets/images/adaptive-control.jpg" alt="Adaptive Control Results">
@@ -52,13 +54,4 @@ I did this project with my friend, and I was responsible for the adaptive contro
 
 
 ## Challenges & Solutions
-The primary challenge was implementing the wind disturbance simulation effectively. While we successfully demonstrated the adaptive controller's effectiveness under wind forces, we weren't able to fully implement the unconstrained mass scenario due to limitations with Mujoco implementation experience.
-
-## Future Work
-• Test multiple loading cases.
-
-• Implement unconstrained mass simulation.
-
-• Study effects of arm geometry on control.
-
-• Compare different control methodologies. 
+The primary challenge was transferring the complex mathematical notation from our class into working code with mujoco.
