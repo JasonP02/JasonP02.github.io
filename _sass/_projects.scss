@@ -158,16 +158,25 @@
   }
 }
 
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  
+  &.completed {
+    background-color: #10B981;
+  }
+  
+  &.ongoing {
+    background-color: #F59E0B;
+  }
+}
+
 .title-status-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  
-  h4 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
 }
 
 // Responsive breakpoints

@@ -4,10 +4,10 @@
   </div>
   <div class="project-title-bar">
     <div class="title-status-wrapper">
+      <span class="status-dot {{ project.status }}"></span>
       <h4>{{ project.title }}</h4>
-      <span class="project-status {{ project.status }}">{{ project.status }}</span>
     </div>
-    <div class="project-year">{{ project.date | date: "%Y" }}</div>
+    <div class="project-year">{{ project.date | split: " - " | first | date: "%Y" }}</div>
   </div>
   <div class="project-info">
     <div class="project-overview">{{ project.subtitle }}</div>
