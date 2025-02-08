@@ -15,8 +15,8 @@ presentation: "/assets/pdfs/Drill.pptx"
 ## Overview
 Development of machine learning models to classify drill bit conditions based on vibrational data. The project involved implementing and comparing various classification methods, ultimately achieving superior results using deep learning approaches. We found that the deep learning models were able to achieve 95% accuracy in classifying the drill bit conditions, which is a significant improvement over the traditional machine learning models.
 
-<div class="image-container">
-  <img src="/assets/images/Drill.png" alt="Drill Press">
+<div class="image-gallery">
+  <img src="/assets/images/Drill.png" alt="Performance Comparison Plot">
 </div>
 
 ## Technical Details
