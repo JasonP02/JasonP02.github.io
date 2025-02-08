@@ -2,7 +2,7 @@
 layout: project
 title: "Autonomous Cup Manipulation"
 subtitle: "Research project using LoCoBot for precise liquid handling"
-date: "Jan 2022 - Dec 2022"
+date: "January 2022 - January 2023"
 status: "completed"
 domain: robotics
 image: "/assets/images/LoCoBot.jpg"

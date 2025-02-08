@@ -127,6 +127,35 @@
   margin: 2rem 0;
 }
 
+.project-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-light-text);
+}
+
+.project-year {
+  font-weight: 500;
+}
+
+.project-status {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  
+  &.completed {
+    background-color: #10B981;
+    color: white;
+  }
+  
+  &.ongoing {
+    background-color: #F59E0B;
+    color: white;
+  }
+}
+
 // Responsive breakpoints
 @media (max-width: 1024px) {
   .project-container {
