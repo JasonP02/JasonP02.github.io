@@ -95,11 +95,11 @@
   gap: 0.5rem;
   width: 100%;
   
-  h4 {
-    font-size: 1.1rem;
+  h5 {
+    font-size: 0.85rem;  // Reduced from default
     font-weight: 500;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.1;    // Tighter line height
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
