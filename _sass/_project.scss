@@ -321,35 +321,12 @@
   }
 }
 
-.report-container {
-  text-align: center;
-  margin: 2rem 0;
-  
-  .report-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    background: var(--color-accent);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: opacity 0.2s;
-    
-    &:hover {
-      opacity: 0.9;
-    }
-    
-    i {
-      font-size: 1.2rem;
-    }
-  }
-}
-
+.report-container,
 .presentation-container {
   text-align: center;
   margin: 2rem 0;
   
+  .report-link,
   .presentation-link {
     display: inline-flex;
     align-items: center;
