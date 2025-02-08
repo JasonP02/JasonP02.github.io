@@ -37,12 +37,3 @@ Development of machine learning models to classify drill bit conditions based on
 
 ## Challenges & Solutions
 The main challenge was surpassing the performance metrics of the original paper. This was achieved through careful implementation of deep learning techniques, including dropout layers and proper normalization strategies, ultimately resulting in improved classification accuracy.
-
-{% if page.has_presentation %}
-<div class="presentation-container">
-  <a href="{{ page.presentation | relative_url }}" class="presentation-link" target="_blank">
-    <i class="fas fa-file-powerpoint"></i>
-    View Presentation
-  </a>
-</div>
-{% endif %}
