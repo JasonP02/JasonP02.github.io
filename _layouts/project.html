@@ -4,9 +4,7 @@ layout: default
 <header class="project-header">
   <h1 class="project-title">{{ page.title }}</h1>
   <p class="project-subtitle">{{ page.subtitle }}</p>
-  {% assign date_parts = page.date | split: " - " %}
-  {% assign formatted_date = date_parts[0] %}
-  {% include project-meta.html date=formatted_date status=page.status %}
+  {% include project-meta.html date=page.date status=page.status %}
 </header>
 
 <main class="main-content">
