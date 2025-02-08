@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Opinions on Learning"
+title: "Placeholder Post"
 date: 2025-02-05
 ---
 
-## To be finished at another time...
+## ...
