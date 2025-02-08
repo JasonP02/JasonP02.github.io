@@ -2,7 +2,7 @@
 layout: project
 title: "Miscellaneous Design Projects"
 subtitle: "Collection of various mechanical design projects"
-project_date : "September 2021 - September 2022"
+project_date: "September 2021 - September 2022"
 status: "completed"
 domain: design
 image: "/assets/images/dresser.png"
@@ -10,18 +10,18 @@ has_github: false
 ---
 
 ## Overview
-A collection of various design projects completed during my academic career. These are all small projects that I estimate I could complete within a couple of hours. I figured why not throw them on here.
+A collection of various design projects completed during my academic career. These projects demonstrate practical applications of mechanical design principles.
 
 ## Projects
 
 ### Dresser Design
-A dresser in my house. It is dimensionally accurate except for the fillets.
+A dresser design with dimensionally accurate modeling except for the fillets.
 
 ### Bridge Analysis
-From Sophmore year in college. This was for my Statics class, and I would make something a lot nicer now!
+From Sophomore year in college. This was a structural analysis project for Statics class.
 
 ### Phone Holder
-We had to design and fabricate a phone holder. Useful introduction to 'thinking about manufacturability' for parts you make!
+A phone holder design and fabrication project focusing on manufacturability principles.
 
 <div class="image-gallery">
   <img src="{{ '/assets/images/dresser.png' | relative_url }}" alt="Dresser Design">
@@ -37,15 +37,15 @@ We had to design and fabricate a phone holder. Useful introduction to 'thinking 
 </div>
 
 ## Key Learnings
-• Design for manufacturability
-• Material selection principles
-• Structural analysis techniques
-• CAD best practices
-• Project documentation
+• Design for manufacturability.
+• Material selection principles.
+• Structural analysis techniques.
+• CAD best practices.
+• Project documentation.
 
 ## Technical Details
-• 3D modeling in SolidWorks
-• Structural analysis and optimization
-• Material selection methodology
-• Manufacturing considerations
-• Design documentation 
+• 3D modeling in SolidWorks.
+• Structural analysis and optimization.
+• Material selection methodology.
+• Manufacturing considerations.
+• Design documentation.

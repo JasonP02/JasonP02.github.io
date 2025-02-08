@@ -2,7 +2,7 @@
 layout: project
 title: "SLAM Implementation"
 subtitle: "Simultaneous Localization and Mapping"
-project_date : "October 2024 - December 2024"
+project_date: "October 2023 - December 2023"
 status: "completed"
 domain: robotics
 image: "/assets/images/SLAM.jpg"
@@ -11,19 +11,15 @@ github: "https://github.com/jasonp02/SLAM_MH01"
 ---
 
 ## Overview
-Developed a complete SLAM (Simultaneous Localization and Mapping) system
-from the ground up in Python, moving beyond the standard ROS abstractions
-used in robotics competitions to gain deeper understanding of the underlying
-principles. I might revisit this project if time permits, but there are other things I am interested in right now.
+Developed a complete SLAM (Simultaneous Localization and Mapping) system from the ground up in Python, moving beyond the standard ROS abstractions used in robotics competitions to gain deeper understanding of the underlying principles.
 
 ## Technical Details
-• Implementation of core SLAM algorithms
-• Bundle adjustment optimization
-• Feature detection and matching
-• Loop closure detection
-• Performance optimization techniques
-• Complex data processing and storage pipeline
-
+• Implementation of core SLAM algorithms.
+• Bundle adjustment optimization.
+• Feature detection and matching.
+• Loop closure detection.
+• Performance optimization techniques.
+• Complex data processing and storage pipeline.
 
 <div class="tech-stack">
   <span class="tech-tag">Computer Vision</span>
@@ -34,11 +30,10 @@ principles. I might revisit this project if time permits, but there are other th
 </div>
 
 ## Key Learnings
-• Complex Python project architecture
-• Data pipeline management
-• Optimization techniques
-• Mathematical foundations of SLAM
+• Complex Python project architecture.
+• Data pipeline management.
+• Optimization techniques.
+• Mathematical foundations of SLAM.
 
 ## Challenges & Solutions
-The main challenge was implementing efficient bundle adjustment for large-scale
-mapping. I had a lot of trouble deciding how to decide what data to keep since the end goal of this project was to run this on a PI. In the end, I got busy with other things an did not finish this project. Loop closure and BA is tough!
+The main challenge was implementing efficient bundle adjustment for large-scale mapping. The project focused on optimizing data storage and processing for Raspberry Pi deployment, though implementation of loop closure remains incomplete.

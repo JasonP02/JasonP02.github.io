@@ -2,7 +2,7 @@
 layout: project
 title: "Adaptive PID Control Simulation"
 subtitle: "Robotic arm trajectory control under external forces"
-project_date : "October 2024 - December 2024"
+project_date: "October 2023 - December 2023"
 status: "completed"
 domain: robotics
 image: "/assets/images/adaptive_control.jpg"
@@ -16,11 +16,11 @@ report: "/assets/pdfs/adaptive_control_report.pdf"
 Implementation of adaptive control strategies for the Emika Panda robotic arm, focusing on maintaining circular trajectory under various external forces including wind disturbance and unconstrained mass handling.
 
 ## Technical Details
-• Circular trajectory implementation
-• Wind force disturbance simulation
-• Adaptive controller development
-• Comparison with Ziegler-Nichols method
-• Performance analysis under varying conditions
+• Circular trajectory implementation.
+• Wind force disturbance simulation.
+• Adaptive controller development.
+• Comparison with Ziegler-Nichols method.
+• Performance analysis under varying conditions.
 
 I did this project with my friend, and I was responsible for the adaptive control and simulation.
 
@@ -32,16 +32,16 @@ I did this project with my friend, and I was responsible for the adaptive contro
 </div>
 
 ## Key Learnings
-• Advanced control system design
-• Disturbance rejection techniques
-• Simulation environment setup
-• Performance analysis methods
+• Advanced control system design.
+• Disturbance rejection techniques.
+• Simulation environment setup.
+• Performance analysis methods.
 
 ## Challenges & Solutions
 The primary challenge was implementing the wind disturbance simulation effectively. While we successfully demonstrated the adaptive controller's effectiveness under wind forces, we weren't able to fully implement the unconstrained mass scenario due to limitations with Mujoco implementation experience.
 
 ## Future Work
-• Test multiple loading cases
-• Implement unconstrained mass simulation
-• Study effects of arm geometry on control
-• Compare different control methodologies 
+• Test multiple loading cases.
+• Implement unconstrained mass simulation.
+• Study effects of arm geometry on control.
+• Compare different control methodologies. 
