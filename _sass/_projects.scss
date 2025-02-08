@@ -137,12 +137,14 @@
 }
 
 .project-year {
-  font-weight: 500;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-top: 0.2rem;
 }
 
 .project-status {
-  font-size: 0.8rem;
-  padding: 0.2rem 0.6rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
   border-radius: 12px;
   
   &.completed {
@@ -153,6 +155,18 @@
   &.ongoing {
     background-color: #F59E0B;
     color: white;
+  }
+}
+
+.title-status-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }
 

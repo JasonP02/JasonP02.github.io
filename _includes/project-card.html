@@ -3,11 +3,11 @@
     <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
   </div>
   <div class="project-title-bar">
-    <h4>{{ project.title }}</h4>
-    <div class="project-card-meta">
-      <span class="project-year">{{ project.date | date: "%Y" }}</span>
+    <div class="title-status-wrapper">
+      <h4>{{ project.title }}</h4>
       <span class="project-status {{ project.status }}">{{ project.status }}</span>
     </div>
+    <div class="project-year">{{ project.date | date: "%Y" }}</div>
   </div>
   <div class="project-info">
     <div class="project-overview">{{ project.subtitle }}</div>
