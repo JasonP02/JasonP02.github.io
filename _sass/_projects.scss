@@ -92,8 +92,8 @@
   color: white;
   backdrop-filter: blur(4px);
   z-index: 2;
-  padding: 1.2rem 1.5rem;
-  min-height: 4rem;
+  padding: 1rem 1.2rem;
+  min-height: 3.5rem;
   display: flex;
   align-items: center;
 }
@@ -101,14 +101,14 @@
 .title-status-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   width: 100%;
   
   h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
 
