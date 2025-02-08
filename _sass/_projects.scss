@@ -93,7 +93,8 @@
   backdrop-filter: blur(4px);
   z-index: 2;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.25rem 0.5rem;
 }
 
@@ -132,10 +133,25 @@
   color: var(--color-light-text);
 }
 
+.title-status-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex: 1;
+  
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
 .project-year {
   font-size: 0.7rem;
   opacity: 0.9;
-  margin: 0;
+  margin-left: 0.5rem;
+  white-space: nowrap;
 }
 
 .project-status {
@@ -170,19 +186,6 @@
   &.ongoing {
     background-color: #F59E0B;
     box-shadow: 0 0 4px rgba(245, 158, 11, 0.6);
-  }
-}
-
-.title-status-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  
-  h4 {
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin: 0;
-    line-height: 1;
   }
 }
 
