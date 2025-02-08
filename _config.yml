@@ -15,6 +15,11 @@ url: "https://jasonp02.github.io"
 # Build settings
 
 markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
 
 remote_theme: pages-themes/primer@v0.6.0
 

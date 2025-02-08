@@ -61,6 +61,17 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   position: relative;
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all var(--transition-speed);
+    
+    &:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
 }
 
 .project-image {
