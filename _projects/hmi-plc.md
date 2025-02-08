@@ -2,7 +2,7 @@
 layout: project
 title: "HMI-PLC Integration System"
 subtitle: "Industrial automation control interface"
-project_date: "September 2023 - December 2023"
+project_date: "September 2024 - December 2024"
 status: "completed"
 domain: other
 image: "/assets/images/HMI.png"

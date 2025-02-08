@@ -2,7 +2,7 @@
 layout: project
 title: "Faulty Drill Bit Analysis"
 subtitle: "Machine learning classification of drill bit conditions"
-project_date: "April 2023 - May 2023"
+project_date: "April 2024 - May 2024"
 status: "completed"
 domain: machine-learning
 image: "/assets/images/Drill.png"
