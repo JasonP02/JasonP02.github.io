@@ -2,7 +2,7 @@
 layout: project
 title: "GNNs for Pose Anomaly Detection"
 subtitle: "Detecting anomalies in human poses"
-project_date : "January 2023 - May 2023"
+project_date : "January 2024 - May 2024"
 status: "completed"
 domain: machine-learning
 image: "/assets/images/GNN.jpg"
