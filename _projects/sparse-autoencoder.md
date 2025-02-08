@@ -2,7 +2,7 @@
 layout: project
 title: "Sparse Autoencoder Investigations"
 subtitle: "Exploring neural network interpretability"
-date: "January 2024 - Present"
+date: "January 2024 - February 2025"
 status: "ongoing"
 domain: machine-learning
 image: "/assets/images/SAE.jpg"
