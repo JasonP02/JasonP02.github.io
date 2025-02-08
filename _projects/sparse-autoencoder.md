@@ -11,7 +11,7 @@ github: "https://github.com/jasonp02/sae-investigations"
 ---
 
 ## Overview
-Research project focused on understanding and implementing sparse autoencoders for neural network interpretability. This is an ongoing project with a lot of unresolved details. Currently investigating how a pretrained SAE can investigate the chain of thought reasoning for models like GPT-3.
+Research project focused on understanding and implementing sparse autoencoders for neural network interpretability. This is an ongoing project with a lot of unresolved details. Currently investigating how a pretrained SAE can investigate the chain of thought reasoning for chain of thought o1 style models. 
 
 ## Technical Details
 • Implementation of sparse autoencoder architectures.
@@ -19,9 +19,6 @@ Research project focused on understanding and implementing sparse autoencoders f
 • Training pipeline development.
 
 • Cloud computing integration.
-
-• Performance optimization.
-
 
 <div class="tech-stack">
   <span class="tech-tag">Python</span>
