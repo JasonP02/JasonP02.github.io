@@ -14,7 +14,7 @@ github: "https://github.com/JasonP02/ChildAnomalyDetection"
 I worked under Xian Du in the [Intelligent Sensing Lab](https://websites.umass.edu/xiandu/) at UMass Amherst, where I received a grant from the [UMass Amherst Center for Research on Families](https://www.umass.edu/family/people/jason-pettinato) to research child safety monitoring. In this project, I investigated the use of Graph Neural Networks to detect anomalies in human poses. This approach was taken primarily to make the subjects of the training data anonymous (due to the sensitive nature of the subjects).
 
 ## Technical Details
-• Preprocessed pose estimation data and constructed graph representations where nodes correspond to keypoints and edges capture anatomical connections.
+• Preprocessed training and test set videos into a graph based representation.
 
 • Designed and implemented a custom Graph Neural Network architecture integrating graph convolutional layers and attention mechanisms.
 
@@ -22,6 +22,11 @@ I worked under Xian Du in the [Intelligent Sensing Lab](https://websites.umass.e
 
 • Applied data augmentation techniques and rigorous validation to mitigate noise and enhance model performance.
 
+### Why not just use the raw video data?
+I noticed that getting training data was really hard, so this was a way to help the model learn faster. There are two issues with this approach:
+1. The estimated pose requires using a pose estimation network (errors propogate)
+
+2. Changes in camera angle lead to very different pose graphs. I suspect this was the main issue with this approach.
 
 <div class="tech-stack">
   <span class="tech-tag">Python</span>
@@ -41,4 +46,4 @@ I worked under Xian Du in the [Intelligent Sensing Lab](https://websites.umass.e
 
 
 ## Challenges & Solutions
-The primary challenge was developing an effective graph structure that could reliably capture the subtle variations in human poses, especially when dealing with noisy or incomplete data. This was addressed by iteratively experimenting with different graph configurations and fine-tuning the network's hyperparameters. Despite these efforts, some edge cases remained challenging to detect, pointing to opportunities for further refinement and future research.
+The primary challenge was developing an effective graph structure that could reliably capture the subtle variations in human poses, especially when dealing with different camera angles from the training data. This was addressed by experimenting with parameters to represent the viewing angle. Despite these efforts, some edge cases remained challenging to detect, pointing to opportunities for further refinement and future research.
