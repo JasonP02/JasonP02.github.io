@@ -14,10 +14,15 @@ Modification and analysis of a pediatric bone screw design based on the HA 6.5 s
 
 ## Technical Details
 • SolidWorks screw profile design.
+
 • ANSYS simulation setup and analysis.
+
 • Experimental validation using Instron machine.
+
 • Modification of diameter and pitch parameters.
+
 • Stress and strain analysis.
+
 
 I was the sole person in my group who did the FEA, so I had to learn how to use ANSYS on my own. It was a bit challenging at first, but I got the hang of it after many hours of trial and error with meshes. The primary goal was matching the simulation results to the experimental results. Here is a plot of the simulation results.
 
@@ -34,9 +39,13 @@ I was the sole person in my group who did the FEA, so I had to learn how to use 
 
 ## Key Learnings
 • Medical device design principles.
+
 • FEA simulation techniques.
+
 • Experimental validation methods.
+
 • CAD modeling best practices.
+
 
 ## Challenges & Solutions
 The primary challenge was ensuring accurate correlation between simulation and experimental results. This was addressed through careful model preparation and validation against Instron machine data. 

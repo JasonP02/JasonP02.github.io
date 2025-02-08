@@ -15,10 +15,15 @@ Development of a Human Machine Interface (HMI) system integrated with Allen Brad
 
 ## Technical Details
 • Allen Bradley PLC programming.
+
 • HMI interface design.
+
 • System constraint implementation.
+
 • Full operational testing.
+
 • Video documentation of working system.
+
 
 <div class="tech-stack">
   <span class="tech-tag">PLC Programming</span>
@@ -28,9 +33,13 @@ Development of a Human Machine Interface (HMI) system integrated with Allen Brad
 
 ## Key Learnings
 • Industrial automation practices.
+
 • HMI design principles.
+
 • PLC programming.
+
 • System integration.
+
 
 ## Challenges & Solutions
 The main challenge was ensuring reliable communication between the HMI and PLC while meeting all operational constraints. This was resolved through careful system design and thorough testing procedures.

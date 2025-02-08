@@ -15,9 +15,13 @@ Research project focused on understanding and implementing sparse autoencoders f
 
 ## Technical Details
 • Implementation of sparse autoencoder architectures.
+
 • Training pipeline development.
+
 • Cloud computing integration.
+
 • Performance optimization.
+
 
 <div class="tech-stack">
   <span class="tech-tag">Python</span>
@@ -28,9 +32,13 @@ Research project focused on understanding and implementing sparse autoencoders f
 
 ## Key Learnings
 • Advanced ML concepts.
+
 • Cloud resource management.
+
 • Optimization techniques.
+
 • Research methodologies.
+
 
 ## Challenges & Solutions
 The main challenge so far has been setting up efficient development environments and managing computational resources. Currently looking into training a SAE using vast.ai cloud compute.

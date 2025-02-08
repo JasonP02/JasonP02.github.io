@@ -15,11 +15,17 @@ Developed a complete SLAM (Simultaneous Localization and Mapping) system from th
 
 ## Technical Details
 • Implementation of core SLAM algorithms.
+
 • Bundle adjustment optimization.
+
 • Feature detection and matching.
+
 • Loop closure detection.
+
 • Performance optimization techniques.
+
 • Complex data processing and storage pipeline.
+
 
 <div class="tech-stack">
   <span class="tech-tag">Computer Vision</span>
@@ -31,9 +37,13 @@ Developed a complete SLAM (Simultaneous Localization and Mapping) system from th
 
 ## Key Learnings
 • Complex Python project architecture.
+
 • Data pipeline management.
+
 • Optimization techniques.
+
 • Mathematical foundations of SLAM.
+
 
 ## Challenges & Solutions
 The main challenge was implementing efficient bundle adjustment for large-scale mapping. The project focused on optimizing data storage and processing for Raspberry Pi deployment, though implementation of loop closure remains incomplete.

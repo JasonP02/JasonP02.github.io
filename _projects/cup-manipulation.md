@@ -14,9 +14,13 @@ Two-semester research project at the [Intelligent Sensing Lab](https://websites.
 
 ## Technical Details
 • Implemented ROS control systems.
+
 • Developed computer vision pipeline.
+
 • Created trajectory planning algorithms.
+
 • Liquid dynamics adjustment algorithm with PID.
+
 
 <div class="tech-stack">
   <span class="tech-tag">ROS</span>
@@ -27,9 +31,13 @@ Two-semester research project at the [Intelligent Sensing Lab](https://websites.
 
 ## Key Learnings
 • Deep understanding of ROS architecture.
+
 • Computer vision pipeline development.
+
 • Robot control system implementation.
+
 • Linux system administration.
+
 
 ## Challenges & Solutions
 The primary challenge was achieving reliable liquid handling without spills. This was addressed through careful trajectory planning and the development of specialized control algorithms that accounted for liquid dynamics. In the end, there was not enough time to finish things.

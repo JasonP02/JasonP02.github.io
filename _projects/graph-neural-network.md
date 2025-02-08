@@ -15,9 +15,13 @@ I worked under Xian Du in the [Intelligent Sensing Lab](https://websites.umass.e
 
 ## Technical Details
 • Preprocessed pose estimation data and constructed graph representations where nodes correspond to keypoints and edges capture anatomical connections.
+
 • Designed and implemented a custom Graph Neural Network architecture integrating graph convolutional layers and attention mechanisms.
+
 • Developed specialized loss functions and evaluation metrics to robustly distinguish between normal and anomalous poses.
+
 • Applied data augmentation techniques and rigorous validation to mitigate noise and enhance model performance.
+
 
 <div class="tech-stack">
   <span class="tech-tag">Python</span>
@@ -28,9 +32,13 @@ I worked under Xian Du in the [Intelligent Sensing Lab](https://websites.umass.e
 
 ## Key Learnings
 • Gained insight into representing complex human poses as graph structures.
+
 • Learned to design and optimize custom GNN architectures tailored for anomaly detection.
+
 • Enhanced skills in preprocessing non-Euclidean data and handling noisy real-world inputs.
+
 • Improved iterative troubleshooting and model fine-tuning for deep learning applications.
+
 
 ## Challenges & Solutions
 The primary challenge was developing an effective graph structure that could reliably capture the subtle variations in human poses, especially when dealing with noisy or incomplete data. This was addressed by iteratively experimenting with different graph configurations and fine-tuning the network's hyperparameters. Despite these efforts, some edge cases remained challenging to detect, pointing to opportunities for further refinement and future research.

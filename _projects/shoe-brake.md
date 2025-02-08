@@ -13,11 +13,17 @@ has_github: false
 Design of a fail-safe shoe brake mechanism that activates during power failure scenarios. The system utilizes spring energy balanced by a solenoid during normal operation, ensuring immediate braking response during power loss.
 
 ## Technical Details
-• Fail-safe mechanism design
-• Spring force calculations
-• Solenoid selection and integration
-• Complete mechanical assembly
-• Budget-conscious component selection
+• Fail-safe mechanism design.
+
+• Spring force calculations.
+
+• Solenoid selection and integration.
+
+• Complete mechanical assembly.
+
+• Budget-conscious component selection.
+
+
 
 <div class="tech-stack">
   <span class="tech-tag">SolidWorks</span>
@@ -26,10 +32,14 @@ Design of a fail-safe shoe brake mechanism that activates during power failure s
 </div>
 
 ## Key Learnings
-• Safety system design principles
-• Component selection under constraints
-• Force analysis and calculations
-• Budget management in design
+• Safety system design principles.
+
+• Component selection under constraints.
+
+• Force analysis and calculations.
+
+• Budget management in design.
+
 
 ## Challenges & Solutions
 The primary challenge was balancing the spring forces with the solenoid capabilities while staying within budget constraints. Since this problem had a clear solution, I figured there was an optimal sensor (and there was) for our force requirements.

@@ -38,14 +38,23 @@ A phone holder design and fabrication project focusing on manufacturability prin
 
 ## Key Learnings
 • Design for manufacturability.
+
 • Material selection principles.
+
 • Structural analysis techniques.
+
 • CAD best practices.
+
 • Project documentation.
+
 
 ## Technical Details
 • 3D modeling in SolidWorks.
+
 • Structural analysis and optimization.
+
 • Material selection methodology.
+
 • Manufacturing considerations.
+
 • Design documentation.

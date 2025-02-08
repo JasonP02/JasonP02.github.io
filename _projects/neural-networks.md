@@ -17,11 +17,17 @@ understanding of how neural networks work at their core, without the abstraction
 provided by modern frameworks.
 
 ## Technical Details
-• Implemented backpropagation from first principles\
-• Built optimizers (SGD, Adam) and activation functions\
-• Created custom loss functions and metrics\
-• Developed data preprocessing pipelines
-• Implemented various layer types (Dense, Conv2D, LSTM cells)
+• Implemented backpropagation from first principles.
+
+• Built optimizers (SGD, Adam) and activation functions.
+
+• Created custom loss functions and metrics.
+
+• Developed data preprocessing pipelines.
+
+• Implemented various layer types (Dense, Conv2D, LSTM cells).
+
+
 
 <div class="tech-stack">
   <span class="tech-tag">Python</span>
@@ -31,12 +37,19 @@ provided by modern frameworks.
 </div>
 
 ## Key Learnings
-• Deep understanding of tensor operations and neural network fundamentals
-• Importance of efficient matrix operations for performance
-• Debugging complex mathematical operations
-• Value of testing in mathematical software
+• Deep understanding of tensor operations and neural network fundamentals.
+
+• Importance of efficient matrix operations for performance.
+
+• Debugging complex mathematical operations.
+
+• Value of testing in mathematical software.
+
+
 
 ## Challenges & Solutions
 The biggest challenge was implementing backpropagation for complex architectures
 like LSTM and Transformers. This was solved by breaking down the computation
 graphs and implementing thorough unit tests for each component. 
+
+

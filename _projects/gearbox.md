@@ -14,10 +14,15 @@ Design of a 12:1 ratio gearbox under specific geometric constraints. Utilized MA
 
 ## Technical Details
 • 12:1 gear ratio design.
+
 • MATLAB optimization script development.
+
 • Geometric constraint analysis.
+
 • Load capacity calculations.
+
 • Multiple design iterations.
+
 
 <div class="tech-stack">
   <span class="tech-tag">MATLAB</span>
@@ -27,9 +32,13 @@ Design of a 12:1 ratio gearbox under specific geometric constraints. Utilized MA
 
 ## Key Learnings
 • Gear design principles.
+
 • Design space optimization.
+
 • MATLAB automation.
+
 • Constraint-based design.
+
 
 ## Challenges & Solutions
 The main challenge was efficiently exploring the design space while meeting all geometric and loading constraints. This was solved by developing a MATLAB script to automate the process and identify viable design solutions. 

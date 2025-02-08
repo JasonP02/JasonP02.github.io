@@ -14,11 +14,16 @@ has_github: false
 Development of an autonomous robot for monitoring corn plants in a greenhouse. Used for research purposes by the Bartlett Lab at UMass Amherst.
 
 ## Technical Details
-• Autonomous movement system design
-• Data collection pipeline for remote image access
-• Robust mechanical design done in Solid Works
-• Custom coupler mechanism for vertical movement
-• Rotating base design for multi-angle imaging
+• Autonomous movement system design.
+
+• Data collection pipeline for remote image access.
+
+• Robust mechanical design done in Solid Works.
+
+• Custom coupler mechanism for vertical movement.
+
+• Rotating base design for multi-angle imaging.
+
 
 ### Coupler Mechanism
 The coupler mechanism enables the stepper motor for x movement to be coupled to our lead screw for vertical movements. This was a collaborative design effort that required precise mechanical tolerances and careful consideration of load requirements.
@@ -43,10 +48,15 @@ The rotating base was implemented to capture multiple angles of plant data. Rath
 
 ## Key Learnings
 • Robotics system integration
+
 • Environmental considerations
+
 • Mechanical design principles
+
 • Autonomous navigation
+
 • Collaborative design process
+
 
 ## Challenges & Solutions
 The largest challenges were not being able to order our parts early! I learned the valuable importance of being able to get started on a project and build fast.

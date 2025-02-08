@@ -17,10 +17,15 @@ Implementation of adaptive control strategies for the Emika Panda robotic arm, f
 
 ## Technical Details
 • Circular trajectory implementation.
+
 • Wind force disturbance simulation.
+
 • Adaptive controller development.
+
 • Comparison with Ziegler-Nichols method.
+
 • Performance analysis under varying conditions.
+
 
 I did this project with my friend, and I was responsible for the adaptive control and simulation.
 
@@ -33,15 +38,22 @@ I did this project with my friend, and I was responsible for the adaptive contro
 
 ## Key Learnings
 • Advanced control system design.
+
 • Disturbance rejection techniques.
+
 • Simulation environment setup.
+
 • Performance analysis methods.
+
 
 ## Challenges & Solutions
 The primary challenge was implementing the wind disturbance simulation effectively. While we successfully demonstrated the adaptive controller's effectiveness under wind forces, we weren't able to fully implement the unconstrained mass scenario due to limitations with Mujoco implementation experience.
 
 ## Future Work
 • Test multiple loading cases.
+
 • Implement unconstrained mass simulation.
+
 • Study effects of arm geometry on control.
+
 • Compare different control methodologies. 
