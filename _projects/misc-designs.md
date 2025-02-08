@@ -5,7 +5,7 @@ subtitle: "Collection of various mechanical design projects"
 project_date: "September 2021 - September 2022"
 status: "completed"
 domain: design
-image: "/assets/images/dresser.png"
+image: "/assets/images/phone-holder.png"
 has_github: false
 ---
 
