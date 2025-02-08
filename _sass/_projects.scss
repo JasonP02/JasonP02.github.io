@@ -95,13 +95,14 @@
   gap: 0.3rem;
   width: 100%;
   
-  h6 {
+  h5 {
     font-size: 0.8rem;
     font-weight: 500;
     margin: 0;
     line-height: 1;
     white-space: nowrap;
     overflow: hidden;
+
     text-overflow: ellipsis;
   }
 }
