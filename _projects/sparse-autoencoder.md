@@ -11,7 +11,7 @@ github: "https://github.com/jasonp02/sae-investigations"
 ---
 
 ## Overview
-Research project focused on understanding and implementing sparse autoencoders for LLM interpretability (how do these models actually 'think'). This is an ongoing project with a lot of unresolved details. Currently investigating how a pretrained SAE can investigate the chain of thought reasoning for chain of thought o1 style models. 
+Research project focused on understanding and implementing sparse autoencoders for LLM interpretability (how these models 'think'). This is an ongoing project with a lot of unresolved details. Currently investigating how a pretrained SAE can investigate the chain of thought reasoning for chain of thought o1 style models. 
 
 ## Technical Details
 • Implementation of sparse autoencoder architectures.
