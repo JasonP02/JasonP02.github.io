@@ -32,7 +32,7 @@ This was a project for [CS690K](https://sites.google.com/view/adv-robot-dyn-ctrl
 I was responsible for the adaptive control and simulation implementation of the arm. In the end, the adaptive controller was able to maintain the circular trajectory under the wind disturbance and unconstrained mass handling with much better performance than the Ziegler-Nichols method.
 
 <div class="image-container">
-  <img src="/assets/images/adaptive-control.jpg" alt="Adaptive Control Results">
+  <img src="/assets/images/adaptive_control.jpg" alt="Adaptive Control Results">
 </div>
 
 <div class="tech-stack">
