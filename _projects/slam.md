@@ -11,7 +11,12 @@ github: "https://github.com/jasonp02/SLAM_MH01"
 ---
 
 ## Overview
-Developed a complete SLAM (Simultaneous Localization and Mapping) system from the ground up in Python, moving beyond the standard ROS abstractions used in robotics competitions to gain deeper understanding of the underlying principles.
+Developed a complete SLAM (Simultaneous Localization and Mapping) system from the ground up in Python, moving beyond the standard ROS abstractions used in robotics competitions to gain deeper understanding of the underlying principles. I used ORB features from the [ORB3 paper](https://github.com/UZ-SLAMLab/ORB_SLAM3), and I used some online resources to look into bundle adjustment, computer vision viewing angles, etc.
+
+### What is SLAM? 
+SLAM is an algorithm that allows the robot to map an enviornment. This is a fundamental problem in robotics, and as I got into implementing this I learned a lot... see the [dunning kruger effect](https://tapandesai.com/wp-content/uploads/2023/03/The-Dunning-Kruger-Effect.png) for my approximate learning process.
+
+
 
 ## Technical Details
 • Implementation of core SLAM algorithms.
@@ -47,3 +52,9 @@ Developed a complete SLAM (Simultaneous Localization and Mapping) system from th
 
 ## Challenges & Solutions
 The main challenge was implementing efficient bundle adjustment for large-scale mapping. The project focused on optimizing data storage and processing for Raspberry Pi deployment, though implementation of loop closure remains incomplete.
+
+### Bundle Adjustment
+Bundle adjustment is how the robot refines it's understanding of the scene. Mathematically, it is an optimization problem. Bundle adjustment itself is not hard, but managing all of the data efficently is. 
+
+### Loop Closure:
+Loop closure is an algorithm that allows the robot to 'close the loop' (know that it has been at a location before). This is really hard to do. I used ORB features to help the robot remember where it has been, but I was unable to get the loop closure to work.

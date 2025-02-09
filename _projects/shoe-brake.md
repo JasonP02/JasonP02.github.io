@@ -21,9 +21,6 @@ Design of a fail-safe shoe brake mechanism that activates during power failure s
 
 • Complete mechanical assembly.
 
-• Budget-conscious component selection.
-
-
 
 <div class="tech-stack">
   <span class="tech-tag">SolidWorks</span>

@@ -14,6 +14,9 @@ report: "/assets/pdfs/energy_harvester_report.pdf"
 ## Overview
 Analysis and implementation of a nonlinear energy harvesting system based on magnetic suspension, following research by Alevras et al. The project involved studying chaotic behaviors and bifurcations in a magnetic energy harvester system.
 
+### What is a bifurcation?
+Bifurcations are a primary object of study in nonlinear dynamics. These are plots that tell us how stable our system is, and is useful for seeing when a system will undergo some critical change. For this project, bifurcation would be the transition from the magnet moving to stopping.
+
 ## Technical Details
 • Nonlinear system modeling.
 

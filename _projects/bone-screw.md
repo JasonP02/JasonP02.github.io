@@ -10,7 +10,7 @@ has_github: false
 ---
 
 ## Overview
-Modification and analysis of a pediatric bone screw design based on the HA 6.5 standard. Project involved both CAD modeling and finite element analysis, with validation against experimental data.
+Modification and analysis of a pediatric bone screw design based on the [HA 6.5 standard](https://www.astm.org/f0543-07.html). Project involved both CAD modeling and finite element analysis, with validation against experimental data.
 
 ## Technical Details
 • SolidWorks screw profile design.
@@ -24,7 +24,7 @@ Modification and analysis of a pediatric bone screw design based on the HA 6.5 s
 • Stress and strain analysis.
 
 
-I was the sole person in my group who did the FEA, so I had to learn how to use ANSYS on my own. It was a bit challenging at first, but I got the hang of it after many hours of trial and error with meshes. The primary goal was matching the simulation results to the experimental results. Here is a plot of the simulation results.
+I did the CAD model and FEA, so I had to learn how to use ANSYS on my own. It was a bit challenging at first, but I got the hang of it after many hours of trial and error with meshes. The primary goal was matching the simulation results to the experimental results. Here is a plot of the simulation results.
 
 <div class="image-gallery">
   <img src="{{ '/assets/images/bone-screw-fea.png' | relative_url }}" alt="Stress Plot">
@@ -38,8 +38,6 @@ I was the sole person in my group who did the FEA, so I had to learn how to use 
 </div>
 
 ## Key Learnings
-• Medical device design principles.
-
 • FEA simulation techniques.
 
 • Experimental validation methods.
@@ -48,4 +46,4 @@ I was the sole person in my group who did the FEA, so I had to learn how to use 
 
 
 ## Challenges & Solutions
-The primary challenge was ensuring accurate correlation between simulation and experimental results. This was addressed through careful model preparation and validation against Instron machine data. 
+The primary challenge was ensuring accurate correlation between simulation and experimental results. This was addressed by carefully reading about different mesh options, and consulting online resources.

@@ -10,7 +10,7 @@ has_github: false
 ---
 
 ## Overview
-A collection of various design projects completed during my academic career. These projects demonstrate practical applications of mechanical design principles.
+A collection of various design projects completed earlier in my academic career. These projects aren't great, but I decided to at least show them.
 
 ## Projects
 
