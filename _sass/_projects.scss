@@ -56,8 +56,13 @@
   border-radius: 8px;
   overflow: hidden;
   background: var(--color-card-bg);
-  height: 400px;  // Increased from 200px
+  height: 400px;
   width: 100%;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .project-image-container {
@@ -68,13 +73,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.project-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .project-title-bar {
