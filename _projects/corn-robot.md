@@ -11,7 +11,7 @@ has_github: false
 ---
 
 ## Overview
-This was my senior capstone project, where I was the analysis lead (CAD, programming). We worked on the development of an autonomous robot for monitoring corn plants in a greenhouse. Used for research purposes by the Bartlett Lab at UMass Amherst. The design is heavily inspired by the ender 3 3d printer, but there were unique challenges we faced when optimizing between portability, costs, and vertical travel.
+This was my senior capstone project, where I was the analysis lead (CAD, programming). We worked on the development of an autonomous robot for monitoring corn plants in a greenhouse. Used for research purposes by the Bartlett Lab at UMass Amherst. The design is heavily inspired by the Ender-3 printer, but there were unique challenges we faced when optimizing between portability, costs, and vertical travel.
 
 ## Technical Details
 • Autonomous movement system design.
