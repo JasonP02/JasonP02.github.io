@@ -1,78 +1,56 @@
 ---
 layout: default
 ---
-<div class="project-container">
-  <aside class="project-sidebar">
-    <nav class="project-nav">
-      <h3>Other Projects</h3>
-      <ul class="project-nav-list">
-        {% for project in site.projects %}
-          {% if project.url != page.url %}
-            <li class="project-nav-item">
-              <a href="{{ project.url | relative_url }}" class="project-nav-link">
-                <span class="status-dot {{ project.status }}"></span>
-                {{ project.title }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
-  </aside>
+<header class="project-header">
+  <h1 class="project-title">{{ page.title }}</h1>
+  <p class="project-subtitle">{{ page.subtitle }}</p>
+  {% include project-meta.html date=page.project_date status=page.status %}
+</header>
 
-  <div class="project-content">
-    <header class="project-header">
-      <h1 class="project-title">{{ page.title }}</h1>
-      <p class="project-subtitle">{{ page.subtitle }}</p>
-      {% include project-meta.html date=page.project_date status=page.status %}
-    </header>
-
-    <main class="main-content">
-      <img src="{{ page.header_image | default: page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
-      
-      {% if page.has_github %}
-      <div class="github-container">
-        <a href="{{ page.github }}" class="github-link">
-          <i class="fab fa-github"></i>
-          View on GitHub
-        </a>
-      </div>
-      {% endif %}
-
-      {% if page.has_presentation %}
-      <div class="presentation-container">
-        <a href="{{ page.presentation | relative_url }}" class="presentation-link" target="_blank">
-          <i class="fas fa-file-powerpoint"></i>
-          View Full Presentation
-        </a>
-      </div>
-      {% endif %}
-
-      {% if page.has_report %}
-      <div class="report-container">
-        <a href="{{ page.report | relative_url }}" class="report-link" target="_blank">
-          <i class="fas fa-file-pdf"></i>
-          View Full Report
-        </a>
-      </div>
-      {% endif %}
-
-      {{ content }}
-
-      {% if page.has_video %}
-      <div class="video-container">
-        <video controls>
-          <source src="{{ page.video | relative_url }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      {% endif %}
-      
-      <div class="project-actions">
-        <a href="{{ '/#projects' | relative_url }}" class="back-button">
-          <i class="fas fa-arrow-left"></i> Back to Projects
-        </a>
-      </div>
-    </main>
+<main class="main-content">
+  <img src="{{ page.header_image | default: page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
+  
+  {% if page.has_github %}
+  <div class="github-container">
+    <a href="{{ page.github }}" class="github-link">
+      <i class="fab fa-github"></i>
+      View on GitHub
+    </a>
   </div>
-</div>
+  {% endif %}
+
+  {% if page.has_presentation %}
+  <div class="presentation-container">
+    <a href="{{ page.presentation | relative_url }}" class="presentation-link" target="_blank">
+      <i class="fas fa-file-powerpoint"></i>
+      View Full Presentation
+    </a>
+  </div>
+  {% endif %}
+
+  {% if page.has_report %}
+  <div class="report-container">
+    <a href="{{ page.report | relative_url }}" class="report-link" target="_blank">
+      <i class="fas fa-file-pdf"></i>
+      View Full Report
+    </a>
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.has_video %}
+  <div class="video-container">
+    <video controls>
+      <source src="{{ page.video | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  {% endif %}
+  
+  <div class="project-actions">
+    <a href="{{ '/#projects' | relative_url }}" class="back-button">
+      <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+  </div>
+</main>
